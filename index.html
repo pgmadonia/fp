@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flavia e Paolo Gennaro</title>
+<meta name="description" content="Ci sposiamo! 30 aprile 2027, Palermo. Qui trovate tutti i dettagli e potete confermare la vostra presenza.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FAF8F3">
+<link rel="icon" href="img/icona.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icona-180.png">
+<!-- link preview (WhatsApp, Telegram, Messenger, email apps) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Flavia e Paolo Gennaro · 30 aprile 2027">
+<meta property="og:description" content="Ci sposiamo! 30 aprile 2027, Palermo. Qui trovate tutti i dettagli e potete confermare la vostra presenza.">
+<meta property="og:url" content="https://flaviaepaolo.cloud/">
+<meta property="og:image" content="https://flaviaepaolo.cloud/img/anteprima.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+/* base reset (the preview host added this around the page) */
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<style>
+/* Fonts served from the site (fonts/), not from Google: no visitor data leaves for a third party.
+   Latin subset only: covers Italian, English, French and Spanish. */
+@font-face { font-family: "Allura"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/allura-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant SC"; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/cormorant-sc-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant SC"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/cormorant-sc-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 500; font-display: swap; src: url("fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-display: swap; src: url("fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2"); }
+
+/* Layout: one centred column of "invitation pages" on cream paper, joined by a hand-drawn thread (animated in step 2).
+   Single deliberate theme: the paper of the printed invites, so no dark variant. */
+:root {
+  --paper: #FAF8F3;      /* invite background */
+  --paper-deep: #F1ECE2; /* cards, placeholders */
+  --ink: #1F2A2E;        /* line art + text */
+  --ink-soft: #55605F;   /* secondary text */
+  --orange: #E8963C;     /* calico patch: buttons */
+  --orange-ink: #9A5414; /* orange dark enough for text on cream */
+  --grey: #A8A49E;       /* grey patch: thread, rules */
+  --line: #D8D1C4;       /* hairlines, dashed placeholders */
+  --thread: #34302B;     /* same ink as the drawings' lines */
+
+  --f-script: "Allura", "Segoe Script", "Apple Chancery", cursive;
+  --f-body: "Cormorant Garamond", "Cormorant", Garamond, Georgia, serif;
+  --f-caps: "Cormorant SC", "Cormorant Garamond", Georgia, serif;
+
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; } /* sections use display:grid, which would beat the hidden attribute */
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 1.1875rem;
+  line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 38rem; margin: 0 auto; }
+
+/* ---------- type ---------- */
+.eyebrow {
+  font-family: var(--f-caps);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.script {
+  font-family: var(--f-script);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0;
+  text-wrap: balance;
+}
+.lead { font-style: italic; font-size: 1.25rem; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+
+/* ---------- sections ---------- */
+section {
+  padding-block: 3.5rem;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1.1rem;
+}
+.curl { width: 64px; height: 28px; color: var(--grey); display: block; margin: 0 auto; }
+
+/* hero */
+.hero { padding-block: 3rem 2.5rem; }
+.hero .names { font-size: clamp(3.4rem, 15vw, 5.6rem); }
+.hero .names .e { font-size: 0.7em; margin-inline: 0.12em; }
+.nowrap { white-space: nowrap; }
+.date {
+  font-weight: 500;
+  font-size: clamp(1.9rem, 8vw, 2.6rem);
+  letter-spacing: 0.08em;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* event blocks */
+.venue { font-size: clamp(2.6rem, 11vw, 3.6rem); }
+.facts { display: grid; gap: 0.15rem; font-style: italic; color: var(--ink-soft); }
+.facts .time { font-style: normal; font-weight: 600; color: var(--ink); letter-spacing: 0.04em; }
+
+/* illustration placeholders: sized like the final art so PSD exports drop straight in */
+.art { display: block; width: 100%; max-width: 100%; height: auto; margin-top: 0.75rem; }
+.ph {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: var(--ar, 16 / 9);
+  margin: 0.5rem 0 0;
+  border: 1.5px dashed var(--line);
+  border-radius: 6px;
+  background: var(--paper-deep);
+  display: grid;
+  place-content: center;
+  gap: 0.25rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+.ph b { font-family: var(--f-caps); letter-spacing: 0.1em; font-weight: 600; color: var(--ink); }
+.ph small { font-size: 0.85rem; opacity: 0.8; }
+
+/* "to be defined" marker */
+.tbd {
+  font-family: var(--f-caps);
+  font-style: normal;
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
+  color: var(--orange-ink);
+  background: color-mix(in srgb, var(--orange) 16%, transparent);
+  border-bottom: 1px dashed var(--orange-ink);
+  padding: 0 0.35em;
+  border-radius: 2px;
+}
+
+/* getting there */
+.cards { display: grid; gap: 1rem; width: 100%; text-align: left; }
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.card h3 { font-family: var(--f-script); font-weight: 400; font-size: 2.1rem; line-height: 1; margin: 0; }
+.card .addr { font-style: italic; color: var(--ink-soft); }
+.card .park { font-size: 1rem; }
+.card .park strong { font-family: var(--f-caps); font-weight: 600; letter-spacing: 0.08em; }
+
+.btn {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--f-caps);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  background: var(--orange);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem 0.5rem;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 2px 0 var(--ink);
+}
+.btn:hover { transform: translateY(-1px); box-shadow: 0 3px 0 var(--ink); }
+.btn:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--ink); }
+.btn:focus-visible, .switch button:focus-visible { outline: 2px solid var(--orange-ink); outline-offset: 3px; }
+.btn svg { width: 1em; height: 1em; }
+.btn.off { background: var(--paper-deep); border-style: dashed; box-shadow: none; color: var(--ink-soft); cursor: default; }
+.note { font-size: 1rem; color: var(--ink-soft); font-style: italic; max-width: 32rem; }
+
+/* rsvp */
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+.chips li {
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.15rem 0.85rem 0.25rem;
+  font-size: 1rem;
+  background: #fff;
+}
+.chips li span { color: var(--ink-soft); font-style: italic; }
+.form-slot {
+  width: 100%;
+  border: 1.5px dashed var(--line);
+  border-radius: 10px;
+  background: var(--paper-deep);
+  padding: 2rem 1rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.ztl a { color: var(--orange-ink); text-underline-offset: 3px; }
+.ztl a:focus-visible { outline: 2px solid var(--orange-ink); outline-offset: 2px; }
+
+/* gifts */
+.gift-text { display: grid; gap: 0.9rem; max-width: 34rem; text-wrap: pretty; margin-top: 1.4rem; }
+#regali { padding-bottom: 1rem; }
+.gift-text p:nth-child(4) { font-style: italic; }   /* the gift paragraph only (view C has three) */
+.gift-card {
+  margin: 0.4rem 0 0; width: 100%; max-width: 28rem; text-align: left;
+  display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1.2rem; align-items: baseline;
+  background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem;
+}
+.gift-card dt { font-family: var(--f-caps); font-weight: 600; letter-spacing: 0.08em; font-size: 0.95rem; color: var(--ink-soft); }
+.gift-card dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+#iban { font-variant-numeric: tabular-nums; letter-spacing: 0.04em; user-select: all; }
+.iban-row { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; align-items: baseline; }
+
+/* fallback (no / wrong code) */
+.fallback { padding-block: 1rem 4rem; }
+
+/* footer */
+footer { text-align: center; padding-block: 1rem 3rem; display: grid; gap: 0.6rem; justify-items: center; }
+footer .sign { font-size: 2.6rem; }
+footer .contact { font-size: 1rem; color: var(--ink-soft); }
+.art-lib { width: 80%; margin-inline: auto; }
+.finale { position: relative; width: min(100%, 22rem); margin-bottom: 0.5rem; }
+.finale .art { margin: 0; }
+/* where the thread winds into a ball: on the ground between the cats, under the grey cat's paws
+   (measured on the drawing). The element is empty; the thread draws the ball itself. */
+.yarn { position: absolute; width: 10.4%; aspect-ratio: 1; left: 51.5%; top: 74.5%; pointer-events: none; }
+.finale.flip .art { transform: scaleX(-1); }   /* grey cat on the right */
+.finale.flip .yarn { left: 38.1%; }             /* ball spot mirrored: 100 − 51.5 − 10.4 */
+
+/* preview-only view switcher (removed before launch) */
+.switch {
+  position: fixed;
+  left: 50%;
+  bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 999px;
+  padding: 0.3rem 0.35rem 0.3rem 0.9rem;
+  font-family: var(--f-caps);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  box-shadow: 0 6px 20px rgb(31 42 46 / 0.25);
+  z-index: 20;
+  white-space: nowrap;
+}
+.switch span { margin-right: 0.3rem; opacity: 0.75; }
+.switch button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+.switch button[aria-pressed="true"] { background: var(--orange); color: var(--ink); }
+
+/* ---------- rsvp form ---------- */
+:root { --err: #A3311F; }
+.rsvp { width: 100%; text-align: left; display: grid; gap: 1.5rem; }
+.field { display: grid; gap: 0.35rem; border: 0; padding: 0; margin: 0; min-width: 0; }
+/* allergy dropdown: a <details> holding checkboxes, so guests can pick several */
+.dd summary {
+  list-style: none; cursor: pointer; position: relative;
+  background: #fff; border: 1.5px solid var(--line); border-radius: 8px;
+  padding: 0.55rem 2.4rem 0.55rem 0.75rem; font-size: 1.125rem;
+}
+.dd summary::-webkit-details-marker { display: none; }
+.dd summary::after {
+  content: ""; position: absolute; right: 0.95rem; top: 50%; width: 0.5rem; height: 0.5rem;
+  border-right: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink);
+  transform: translateY(-70%) rotate(45deg);
+}
+.dd[open] summary { border-color: var(--ink); border-radius: 8px 8px 0 0; }
+.dd[open] summary::after { transform: translateY(-25%) rotate(-135deg); }
+.dd summary:focus-visible { outline: 2px solid color-mix(in srgb, var(--orange) 55%, transparent); outline-offset: 1px; }
+.dd-panel {
+  background: #fff; border: 1.5px solid var(--ink); border-top: 0; border-radius: 0 0 8px 8px;
+  padding: 0.4rem 0.9rem 0.8rem; display: grid;
+}
+.dd-g { font-family: var(--f-caps); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.08em; color: var(--ink-soft); margin-top: 0.6rem; }
+.dd-opt { display: flex; align-items: center; gap: 0.6rem; padding: 0.3rem 0; font-size: 1.1rem; cursor: pointer; }
+.dd-opt input { width: 1.15rem; height: 1.15rem; accent-color: var(--orange-ink); flex: none; }
+.dd-close { justify-self: end; margin-top: 0.4rem; }
+
+.field > label, .field > legend, .field > .flabel, .age > label {
+  font-family: var(--f-caps); font-weight: 600; font-size: 1rem; letter-spacing: 0.08em; padding: 0; margin-bottom: 0.15rem;
+}
+.opt { font-family: var(--f-body); font-style: italic; font-weight: 400; letter-spacing: 0; color: var(--ink-soft); }
+.rsvp input[type="text"], .rsvp input[type="email"], .rsvp input[type="number"], .rsvp textarea {
+  font: inherit; font-size: 1.125rem; color: var(--ink);
+  width: 100%; padding: 0.55rem 0.75rem;
+  background: #fff; border: 1.5px solid var(--line); border-radius: 8px;
+}
+.rsvp textarea { resize: vertical; }
+.rsvp input:focus, .rsvp textarea:focus { outline: 2px solid color-mix(in srgb, var(--orange) 55%, transparent); outline-offset: 1px; border-color: var(--ink); }
+.hint { font-size: 0.95rem; font-style: italic; color: var(--ink-soft); }
+.err { font-size: 0.95rem; color: var(--err); }
+.invalid input { border-color: var(--err) !important; }
+.form-err { text-align: center; }
+.privacy { text-align: center; font-size: 0.9rem; margin-top: -0.6rem; }
+
+/* pill radios / checkboxes */
+.seg, .checks { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.seg input, .checks input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.seg label, .checks label {
+  cursor: pointer; font-size: 1.05rem; font-weight: 500;
+  border: 1.5px solid var(--ink); border-radius: 999px; background: #fff;
+  padding: 0.3rem 1rem 0.4rem; user-select: none;
+}
+.checks label span { font-style: italic; color: var(--ink-soft); font-weight: 400; }
+.checks label::before { content: "○ "; }
+.seg input:checked + label, .checks input:checked + label { background: var(--orange); }
+.checks input:checked + label::before { content: "✓ "; }
+.checks input:checked + label span { color: var(--ink); }
+.seg input:focus-visible + label, .checks input:focus-visible + label { outline: 2px solid var(--orange-ink); outline-offset: 2px; }
+
+/* people */
+.people-head { display: grid; gap: 0.2rem; margin-bottom: -0.6rem; }
+.people { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.person {
+  background: var(--paper-deep); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1rem; display: grid; gap: 1rem;
+}
+.person-head { display: flex; justify-content: space-between; align-items: baseline; }
+.row { display: flex; flex-wrap: wrap; align-items: end; gap: 0.75rem 1rem; }
+.age { display: grid; gap: 0.35rem; width: 6.5rem; }
+.declined .yes-only { display: none; }
+.link-btn {
+  font-family: var(--f-caps); font-weight: 600; font-size: 0.95rem; letter-spacing: 0.08em;
+  background: none; border: 0; padding: 0.2rem 0; color: var(--orange-ink);
+  text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
+.add {
+  justify-self: start; font: inherit; font-family: var(--f-caps); font-weight: 600; font-size: 1rem; letter-spacing: 0.08em;
+  color: var(--ink); background: transparent; cursor: pointer;
+  border: 1.5px dashed var(--ink); border-radius: 999px; padding: 0.45rem 1.1rem;
+}
+.add:hover { background: #fff; }
+.add:focus-visible, .link-btn:focus-visible { outline: 2px solid var(--orange-ink); outline-offset: 3px; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+button.btn { cursor: pointer; }
+.btn-big { justify-self: center; font-size: 1.2rem; padding: 0.65rem 2.6rem 0.7rem; }
+.btn[disabled] { opacity: 0.6; cursor: progress; }
+
+/* thank-you + preview of sheet rows */
+.done { width: 100%; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem 1.2rem; display: grid; gap: 0.7rem; justify-items: center; }
+.done .venue { font-size: 3rem; }
+.sheet-preview { width: 100%; display: grid; gap: 0.5rem; margin-top: 0.8rem; text-align: left; }
+.sheet-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+.sheet-wrap table { border-collapse: collapse; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.sheet-wrap th, .sheet-wrap td { padding: 0.3rem 0.6rem; border-bottom: 1px solid var(--line); white-space: nowrap; text-align: left; }
+.sheet-wrap th { font-family: var(--f-caps); font-weight: 600; letter-spacing: 0.06em; background: var(--paper-deep); }
+
+/* ---------- the thread ---------- */
+body { position: relative; }
+main, footer { position: relative; z-index: 1; }
+#thread { position: absolute; top: 0; left: 0; pointer-events: none; z-index: 0; overflow: visible; }
+#thread path { fill: none; stroke: var(--thread); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.threaded .curl { visibility: hidden; } /* the curls stay as anchors; the thread draws the loops there */
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+}
+
+/* ---------- language picker ---------- */
+.lang {
+  position: absolute; z-index: 5;
+  top: 12px; right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; gap: 2px;
+  background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 3px;
+}
+.lang button {
+  font-family: var(--f-caps); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em;
+  color: var(--ink-soft); background: transparent; border: 0; border-radius: 999px;
+  padding: 0.2rem 0.6rem; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.lang button:focus-visible { outline: 2px solid var(--orange-ink); outline-offset: 2px; }
+.hero { padding-top: 4.5rem; }
+</style>
+
+<!-- language picker, top right -->
+<nav class="lang" id="lang" aria-label="Lingua / Language">
+  <button type="button" data-lang="it">IT</button>
+  <button type="button" data-lang="en">EN</button>
+  <button type="button" data-lang="fr">FR</button>
+  <button type="button" data-lang="es">ES</button>
+</nav>
+
+<main>
+  <!-- HERO — shown in every view -->
+  <section class="hero" aria-labelledby="names">
+    <p class="lead" data-i18n="intro">A tutte le persone a noi care,<br>siamo lieti di annunciare il nostro matrimonio</p>
+    <h1 class="script names" id="names">Flavia <span class="e">e</span> <span class="nowrap">Paolo Gennaro</span></h1>
+    <p class="date" data-i18n="date-hero">30 aprile 2027</p>
+  </section>
+
+  <!-- shown only when the link has no valid code -->
+  <section class="fallback" id="fallback" hidden>
+    <p class="lead" data-i18n="fallback">Per vedere tutti i dettagli, aprite il link che trovate nel vostro invito.</p>
+  </section>
+
+  <!-- CERIMONIA — A B C -->
+  <section id="cerimonia" data-show="A B C">
+    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
+    <p class="eyebrow" data-i18n="eb-cer">La cerimonia</p>
+    <h2 class="script venue">Chiesa del Gesù<br>di Casa Professa</h2>
+    <div class="facts">
+      <p data-i18n="date-cer">Venerdì 30 aprile 2027</p>
+      <p>Piazza Casa Professa 21, Palermo</p>
+      <p class="time" data-i18n="time-cer">Ore 15:15</p>
+    </div>
+    <img class="art art-under" src="img/chiesa.webp" width="1358" height="895" alt="Disegno della Chiesa del Gesù" data-line="under">
+  </section>
+
+  <!-- RICEVIMENTO — A B -->
+  <section id="ricevimento" data-show="A B">
+    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
+    <p class="eyebrow" data-i18n="eb-rec">Il ricevimento</p>
+    <p class="lead" data-i18n="rec-lead">A seguire, avremo grande gioia nel ritrovarci per festeggiare insieme questo giorno speciale presso</p>
+    <h2 class="script venue">Palazzo Francavilla</h2>
+    <div class="facts">
+      <p>Via Ruggiero Settimo 8, Palermo</p>
+      <p class="time" data-i18n="time-rec">Ore 17:30</p>
+    </div>
+    <img class="art art-lib art-under" src="img/biblioteca.webp" width="1000" height="1309" alt="La biblioteca di Palazzo Francavilla: il tavolo con il mappamondo, la libreria e la finestra sul Teatro Massimo" data-line="under">
+  </section>
+
+  <!-- GRIGLIATA — A C -->
+  <section id="grigliata" data-show="A C">
+    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
+    <p class="eyebrow" data-i18n="eb-gr">Il giorno dopo</p>
+    <p class="lead" data-show="A" data-i18n="gr-lead-a">Sale e Pepe hanno avvertito odore di carne e di rosticceria,<br>pare quindi che la festa continui!</p>
+    <p class="lead" data-show="C" data-i18n="gr-lead-c1">Sale e Pepe hanno avvertito odore di carne e di rosticceria e noi sentiamo già la musica che suona!</p>
+    <p class="lead" data-show="C" data-i18n="gr-lead-c2">Saremo felici di poter passare questa giornata insieme a voi!</p>
+    <h2 class="script venue" data-i18n="date-gr">1° Maggio 2027</h2>
+    <div class="facts">
+      <p data-i18n="gr-addr">Vi aspettiamo in Via Settipani 53, Balestrate</p>
+      <p class="time" data-i18n="time-gr">Ore 12:30</p>
+    </div>
+    <img class="art" src="img/festa.webp" width="1600" height="509" alt="I due gatti accanto al barbecue">
+  </section>
+
+  <!-- COME ARRIVARE — cards filtered per view -->
+  <section id="come-arrivare" data-show="A B C">
+    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
+    <p class="eyebrow" data-i18n="eb-go">Come arrivare</p>
+    <h2 class="script venue" data-i18n="h-go">Indirizzi</h2>
+    <div class="cards">
+      <article class="card" data-show="A B C">
+        <h3>Chiesa del Gesù</h3>
+        <p class="addr">Piazza Casa Professa 21, Palermo</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Chiesa%20del%20Ges%C3%B9%20di%20Casa%20Professa%2C%20Piazza%20Casa%20Professa%2021%2C%20Palermo" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="maps">Apri in Maps</span></a>
+      </article>
+      <article class="card" data-show="A B">
+        <h3>Palazzo Francavilla</h3>
+        <p class="addr">Via Ruggiero Settimo 8, Palermo</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Palazzo%20Francavilla%2C%20Via%20Ruggiero%20Settimo%208%2C%20Palermo" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="maps">Apri in Maps</span></a>
+      </article>
+      <article class="card" data-show="A C">
+        <h3 data-i18n="card-gr">La grigliata</h3>
+        <p class="addr" data-i18n="addr-gr">Via Settipani 53, Balestrate</p>
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Via%20Settipani%2053%2C%20Balestrate%20PA" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="maps">Apri in Maps</span></a>
+      </article>
+    </div>
+    <p class="note ztl" data-i18n="ztl">Il centro storico di Palermo ha zone a traffico limitato (ZTL). Venerdì 30 aprile la ZTL diurna è attiva fino alle 20:00: se arrivate in auto, verificate orari e permessi sul <a href="https://repository.comune.palermo.it/polizia-municipale-info.php" target="_blank" rel="noopener">sito del Comune di Palermo</a>.</p>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" data-show="A B C">
+    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
+    <p class="lead" data-i18n="rsvp-lead">Speriamo di avervi tutti al nostro fianco per creare insieme uno dei ricordi più belli della nostra vita.</p>
+    <h2 class="script venue" data-i18n="rsvp-h">Confermate la vostra presenza</h2>
+    <p class="facts" data-i18n="rsvp-by">entro il <span class="time">31 gennaio 2027</span></p>
+    <ul class="chips">
+      <li data-show="A B C" data-i18n="ev-cerimonia">Cerimonia <span>· 30 aprile</span></li>
+      <li data-show="A B" data-i18n="ev-ricevimento">Ricevimento <span>· 30 aprile</span></li>
+      <li data-show="A C" data-i18n="ev-grigliata">Grigliata <span>· 1 maggio</span></li>
+    </ul>
+
+    <form id="rsvp-form" class="rsvp" novalidate>
+      <fieldset class="field">
+        <legend data-i18n="att-legend">La vostra risposta</legend>
+        <div class="seg">
+          <input type="radio" name="attending" id="att-si" value="si" checked><label for="att-si" data-i18n="att-si">Ci saremo</label>
+          <input type="radio" name="attending" id="att-no" value="no"><label for="att-no" data-i18n="att-no">Non potremo esserci</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="party" data-i18n="party-l">Nome del gruppo o della famiglia</label>
+        <input id="party" type="text" autocomplete="off">
+        <p class="hint" data-i18n="party-h">Es. «Famiglia Rossi» oppure «Marco e Giulia»</p>
+        <p class="err" hidden></p>
+      </div>
+
+      <div class="people-head">
+        <h3 class="eyebrow" data-i18n="who-h">Chi siete</h3>
+        <p class="hint" data-i18n="who-hint">Una scheda per ogni persona, bambini compresi.</p>
+      </div>
+      <ol id="people" class="people"></ol>
+      <button type="button" id="add-person" class="add" data-i18n="add">+ Aggiungi persona</button>
+
+      <div class="field">
+        <label for="notes" data-i18n="notes-l">Note <span class="opt">facoltative</span></label>
+        <textarea id="notes" rows="3"></textarea>
+      </div>
+
+      <!-- honeypot: invisible to people, bots fill it in -->
+      <div class="hp" aria-hidden="true"><label for="website">Sito web</label><input id="website" type="text" tabindex="-1" autocomplete="off"></div>
+
+      <p class="err form-err" id="form-err" role="alert" hidden></p>
+      <button type="submit" class="btn btn-big" id="submit" data-i18n="submit">Conferma</button>
+      <p class="hint privacy" data-i18n="privacy">Useremo queste informazioni solo per organizzare il matrimonio e le cancelleremo dopo la festa.</p>
+    </form>
+    <div id="rsvp-done" class="done" hidden></div>
+
+    <p class="note" data-i18n="change">Avete già risposto e volete cambiare qualcosa? Scriveteci direttamente.</p>
+  </section>
+
+  <!-- REGALI — every view -->
+  <section id="regali" data-show="A B C">
+    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
+    <div class="gift-text" data-i18n="gift-text"><p>Quest’ultimo anno è stato fatto di valigie, voli attraverso l’oceano, saluti e giorni contati prima di riabbracciarci.</p><p>Ora comincia il viaggio che abbiamo desiderato più di tutti: una vita quotidiana, semplice, insieme.</p><p>Una vita che speriamo di continuare a condividere anche con voi, tra incontri, racconti e nuove occasioni per ritrovarci, ovunque saremo.</p><p>Il nostro regalo più bello il giorno del nostro matrimonio sarà poter condividere con voi questo inizio. Tuttavia per chi desidera accompagnarci anche con un supporto per le prossime avventure insieme, di seguito i nostri recapiti.</p></div>
+    <dl class="gift-card" data-show="A B">
+      <dt data-i18n="gift-holder">Intestato a</dt>
+      <dd id="gift-holder" data-i18n="gift-holder-v"><span class="tbd">nomi da definire</span></dd>
+      <dt>IBAN</dt>
+      <dd class="iban-row">
+        <span id="iban" data-i18n="gift-iban-v"><span class="tbd">IBAN da definire</span></span>
+        <button type="button" class="link-btn" id="copy-iban" data-i18n="copy" hidden>Copia IBAN</button>
+      </dd>
+    </dl>
+  </section>
+</main>
+
+<footer>
+  <div class="finale">
+    <img class="art" src="img/gatti-gomitolo.webp" width="1150" height="614" alt="Sale e Pepe giocano con il gomitolo">
+    <span class="yarn" aria-hidden="true"></span>
+  </div>
+</footer>
+
+
+<script>
+/* Translations. Italian is the source; the sheet always stores Italian values whatever the guest's language.
+   Strings may contain markup (line breaks, "to be defined" tags). */
+const TBD = { it: "da definire", en: "to be confirmed", fr: "à confirmer", es: "por confirmar" };
+const tbd = (l, s) => `<span class="tbd">${s ?? TBD[l]}</span>`;
+const I18N = {
+  it: {
+    "intro": "A tutte le persone a noi care,<br>siamo lieti di annunciare il nostro matrimonio",
+    "date-hero": "30 aprile 2027",
+    "fallback": "Per vedere tutti i dettagli, aprite il link che trovate nel vostro invito.",
+    "eb-cer": "La cerimonia", "date-cer": "Venerdì 30 aprile 2027", "time-cer": "Ore 15:15",
+    "eb-rec": "Il ricevimento",
+    "rec-lead": "A seguire, avremo grande gioia nel ritrovarci per festeggiare insieme questo giorno speciale presso",
+    "time-rec": "Ore 17:30",
+    "time-gr": "Ore 12:30",
+    "eb-gr": "Il giorno dopo",
+    "gr-lead-a": "Sale e Pepe hanno avvertito odore di carne e di rosticceria,<br>pare quindi che la festa continui!",
+    "gr-lead-c1": "Sale e Pepe hanno avvertito odore di carne e di rosticceria e noi sentiamo già la musica che suona!",
+    "gr-lead-c2": "Saremo felici di poter passare questa giornata insieme a voi!",
+    "date-gr": "1° Maggio 2027",
+    "gr-addr": `Vi aspettiamo in Via Settipani 53, Balestrate`,
+    "eb-go": "Come arrivare", "h-go": "Indirizzi", "card-gr": "La grigliata", "card-gr@A": "La festa continua", "card-gr@C": "La festa",
+    "addr-gr": `Via Settipani 53, Balestrate`,
+    "park": `<strong>Parcheggio</strong> · ${tbd("it", "info in arrivo")}`,
+    "maps": "Apri in Maps",
+    "ztl": "Il centro storico di Palermo ha zone a traffico limitato (ZTL). Venerdì 30 aprile la ZTL diurna è attiva fino alle 20:00: se arrivate in auto, verificate orari e permessi sul <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">sito del Comune di Palermo</a>.",
+    "rsvp-lead": "Speriamo di avervi tutti al nostro fianco per creare insieme uno dei ricordi più belli della nostra vita.",
+    "rsvp-h": "Confermate la vostra presenza",
+    "rsvp-by": `entro il <span class="time">31 gennaio 2027</span>`,
+    "ev-cerimonia": "Cerimonia <span>· 30 aprile</span>",
+    "ev-ricevimento": "Ricevimento <span>· 30 aprile</span>",
+    "ev-grigliata": "Grigliata <span>· 1 maggio</span>",
+    "ev-grigliata@A": "La festa continua <span>· 1 maggio</span>", "ev-grigliata@C": "La festa <span>· 1 maggio</span>",
+    "att-legend": "La vostra risposta", "att-si": "Ci saremo", "att-no": "Non potremo esserci",
+    "party-l": "Nome del gruppo o della famiglia", "party-h": "Es. «Famiglia Rossi» oppure «Marco e Giulia»",
+    "who-h": "Chi siete", "who-hint": "Una scheda per ogni persona, bambini compresi.",
+    "add": "+ Aggiungi persona", "notes-l": `Note <span class="opt">facoltative</span>`,
+    "privacy": "Useremo queste informazioni solo per organizzare il matrimonio e le cancelleremo dopo la festa.",
+    "submit": "Conferma", "sending": "Invio…",
+    "change": "Avete già risposto e volete cambiare qualcosa? Scriveteci direttamente.",
+    "eb-gift": "Regali", "gift-text": "<p>Quest’ultimo anno è stato fatto di valigie, voli attraverso l’oceano, saluti e giorni contati prima di riabbracciarci.</p><p>Ora comincia il viaggio che abbiamo desiderato più di tutti: una vita quotidiana, semplice, insieme.</p><p>Una vita che speriamo di continuare a condividere anche con voi, tra incontri, racconti e nuove occasioni per ritrovarci, ovunque saremo.</p><p>Il nostro regalo più bello il giorno del nostro matrimonio sarà poter condividere con voi questo inizio. Tuttavia per chi desidera accompagnarci anche con un supporto per le prossime avventure insieme, di seguito i nostri recapiti.</p>", "gift-text@C": "<p>Quest’ultimo anno è stato fatto di valigie, voli attraverso l’oceano, saluti e giorni contati prima di riabbracciarci.</p><p>Ora comincia il viaggio che abbiamo desiderato più di tutti: una vita quotidiana, semplice, insieme.</p><p>Una vita che speriamo di continuare a condividere anche con voi, tra incontri, racconti e nuove occasioni per ritrovarci, ovunque saremo.</p>",
+    "gift-holder": "Intestato a", "gift-holder-v": `${tbd("it", "nomi da definire")}`,
+    "gift-iban-v": `${tbd("it", "IBAN da definire")}`, "copy": "Copia IBAN", "copied": "Copiato",
+    "contact": `Per qualsiasi domanda: ${tbd("it", "nome · telefono da definire")}`,
+    "person": "Persona", "remove": "Rimuovi", "name-l": "Nome e cognome",
+    "adult": "Adulto", "minor": "&lt; 18 anni", "age-l": "Età", "attends": "Partecipa a",
+    "diet-l": `Allergie o esigenze alimentari <span class="opt">facoltativo</span>`, "none": "Nessuna",
+    "g-regime": "Regime alimentare", "g-intol": "Intolleranze e celiachia", "g-allergie": "Allergie", "g-altro": "Non in elenco",
+    "dd-done": "Fatto", "other-l": "Quale altra allergia o esigenza?",
+    "e-party": "Scrivete un nome per il gruppo, così sappiamo chi siete.",
+    "e-name": "Scrivete nome e cognome.", "e-age": "Età da 0 a 17.",
+    "e-other": "Scrivete quale, oppure togliete «Altro» dall'elenco.",
+    "e-none": "Spuntate almeno un evento per almeno una persona, oppure scegliete «Non potremo esserci».",
+    "e-send": "Non siamo riusciti a inviare la risposta. Controllate la connessione e riprovate.",
+    "thanks": "Grazie!", "got": "Abbiamo ricevuto la risposta di <b>{party}</b>.",
+    "done-yes": "Non vediamo l'ora di festeggiare con voi.", "done-no": "Ci mancherete. Grazie per avercelo fatto sapere.",
+    "d": { vegetariano: "Vegetariano", vegano: "Vegano", glutine: "Glutine (celiachia)", lattosio: "Lattosio",
+      latte: "Latte e derivati", uova: "Uova", frutta_guscio: "Frutta a guscio", arachidi: "Arachidi", pesce: "Pesce",
+      crostacei: "Crostacei", molluschi: "Molluschi", soia: "Soia", sesamo: "Sesamo", sedano: "Sedano",
+      senape: "Senape", solfiti: "Solfiti", lupini: "Lupini", altro: "Altro" },
+  },
+  en: {
+    "intro": "To all the people dear to us,<br>we are delighted to announce our wedding",
+    "date-hero": "30 April 2027",
+    "fallback": "To see all the details, open the link in your invitation.",
+    "eb-cer": "The ceremony", "date-cer": "Friday 30 April 2027", "time-cer": "At 3:15 pm",
+    "eb-rec": "The reception",
+    "rec-lead": "Afterwards, it will be a great joy to come together and celebrate this special day at",
+    "time-rec": "At 5:30 pm",
+    "time-gr": "At 12:30 pm",
+    "eb-gr": "The day after",
+    "gr-lead-a": "Sale and Pepe have caught the smell of grilled meat and Sicilian street food,<br>so it looks like the party goes on!",
+    "gr-lead-c1": "Sale and Pepe have caught the smell of grilled meat and Sicilian street food, and we can already hear the music playing!",
+    "gr-lead-c2": "We would be so happy to spend this day with you!",
+    "date-gr": "1 May 2027",
+    "gr-addr": `We'll be waiting for you at Via Settipani 53, Balestrate`,
+    "eb-go": "Getting there", "h-go": "Addresses", "card-gr": "The barbecue", "card-gr@A": "The party goes on", "card-gr@C": "The party",
+    "addr-gr": `Via Settipani 53, Balestrate`,
+    "park": `<strong>Parking</strong> · ${tbd("en", "details coming soon")}`,
+    "maps": "Open in Maps",
+    "ztl": "Palermo’s historic centre has limited-traffic zones (ZTL). On Friday 30 April the daytime ZTL is active until 8 pm: if you are coming by car, check the hours and passes on the <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">City of Palermo website</a>.",
+    "rsvp-lead": "We hope to have you all by our side to create together one of the most beautiful memories of our lives.",
+    "rsvp-h": "Please confirm your attendance",
+    "rsvp-by": `by <span class="time">31 January 2027</span>`,
+    "ev-cerimonia": "Ceremony <span>· 30 April</span>",
+    "ev-ricevimento": "Reception <span>· 30 April</span>",
+    "ev-grigliata": "Barbecue <span>· 1 May</span>",
+    "ev-grigliata@A": "The party goes on <span>· 1 May</span>", "ev-grigliata@C": "The party <span>· 1 May</span>",
+    "att-legend": "Your reply", "att-si": "We'll be there", "att-no": "We can't make it",
+    "party-l": "Group or family name", "party-h": "E.g. “The Smiths” or “Mark and Julia”",
+    "who-h": "Who's in your group", "who-hint": "One card per person, children included.",
+    "add": "+ Add a person", "notes-l": `Notes <span class="opt">optional</span>`,
+    "privacy": "We will use this information only to organise the wedding, and will delete it after the celebrations.",
+    "submit": "Confirm", "sending": "Sending…",
+    "change": "Already replied and want to change something? Just write to us.",
+    "eb-gift": "Gifts", "gift-text": "<p>This past year has been made of suitcases, flights across the ocean, goodbyes and days counted until we could hold each other again.</p><p>Now the journey we wanted most of all begins: an everyday life, simple, together.</p><p>A life we hope to keep sharing with you too, through visits, stories and new chances to meet again, wherever we may be.</p><p>The most beautiful gift on our wedding day will be sharing this beginning with you. However, for those who would like to support us on our next adventures together, our details are below.</p>", "gift-text@C": "<p>This past year has been made of suitcases, flights across the ocean, goodbyes and days counted until we could hold each other again.</p><p>Now the journey we wanted most of all begins: an everyday life, simple, together.</p><p>A life we hope to keep sharing with you too, through visits, stories and new chances to meet again, wherever we may be.</p>",
+    "gift-holder": "Account holder", "gift-holder-v": `${tbd("en", "names to be confirmed")}`,
+    "gift-iban-v": `${tbd("en", "IBAN to be confirmed")}`, "copy": "Copy IBAN", "copied": "Copied",
+    "contact": `Any questions: ${tbd("en", "name · phone to be confirmed")}`,
+    "person": "Person", "remove": "Remove", "name-l": "Full name",
+    "adult": "Adult", "minor": "&lt; 18 years", "age-l": "Age", "attends": "Attending",
+    "diet-l": `Allergies or dietary needs <span class="opt">optional</span>`, "none": "None",
+    "g-regime": "Diet", "g-intol": "Intolerances and coeliac disease", "g-allergie": "Allergies", "g-altro": "Not listed",
+    "dd-done": "Done", "other-l": "Which other allergy or need?",
+    "e-party": "Please enter a name for your group, so we know who you are.",
+    "e-name": "Please enter first and last name.", "e-age": "Age from 0 to 17.",
+    "e-other": "Tell us which, or untick “Other”.",
+    "e-none": "Tick at least one event for at least one person, or choose “We can't make it”.",
+    "e-send": "We couldn't send your reply. Check your connection and try again.",
+    "thanks": "Thank you!", "got": "We've received the reply from <b>{party}</b>.",
+    "done-yes": "We can't wait to celebrate with you.", "done-no": "We'll miss you. Thank you for letting us know.",
+    "d": { vegetariano: "Vegetarian", vegano: "Vegan", glutine: "Gluten (coeliac)", lattosio: "Lactose",
+      latte: "Milk and dairy", uova: "Eggs", frutta_guscio: "Tree nuts", arachidi: "Peanuts", pesce: "Fish",
+      crostacei: "Crustaceans", molluschi: "Molluscs", soia: "Soy", sesamo: "Sesame", sedano: "Celery",
+      senape: "Mustard", solfiti: "Sulphites", lupini: "Lupin", altro: "Other" },
+  },
+  fr: {
+    "intro": "À toutes les personnes qui nous sont chères,<br>nous sommes heureux de vous annoncer notre mariage",
+    "date-hero": "30 avril 2027",
+    "fallback": "Pour voir tous les détails, ouvrez le lien qui figure sur votre invitation.",
+    "eb-cer": "La cérémonie", "date-cer": "Vendredi 30 avril 2027", "time-cer": "À 15 h 15",
+    "eb-rec": "La réception",
+    "rec-lead": "Ensuite, nous aurons la grande joie de nous retrouver pour fêter ensemble ce jour si spécial au",
+    "time-rec": "À 17 h 30",
+    "time-gr": "À 12 h 30",
+    "eb-gr": "Le lendemain",
+    "gr-lead-a": "Sale et Pepe ont senti une odeur de viande grillée et de spécialités siciliennes,<br>on dirait bien que la fête continue !",
+    "gr-lead-c1": "Sale et Pepe ont senti une odeur de viande grillée et de spécialités siciliennes, et nous entendons déjà la musique !",
+    "gr-lead-c2": "Nous serions ravis de passer cette journée avec vous !",
+    "date-gr": "1er mai 2027",
+    "gr-addr": `Nous vous attendons Via Settipani 53, Balestrate`,
+    "eb-go": "Comment venir", "h-go": "Adresses", "card-gr": "Le barbecue", "card-gr@A": "La fête continue", "card-gr@C": "La fête",
+    "addr-gr": `Via Settipani 53, Balestrate`,
+    "park": `<strong>Parking</strong> · ${tbd("fr", "infos à venir")}`,
+    "maps": "Ouvrir dans Maps",
+    "ztl": "Le centre historique de Palerme comporte des zones à trafic limité (ZTL). Le vendredi 30 avril, la ZTL de jour est active jusqu’à 20 h : si vous venez en voiture, vérifiez les horaires et les permis sur le <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">site de la Ville de Palerme</a>.",
+    "rsvp-lead": "Nous espérons vous avoir tous à nos côtés pour créer ensemble l'un des plus beaux souvenirs de notre vie.",
+    "rsvp-h": "Merci de confirmer votre présence",
+    "rsvp-by": `avant le <span class="time">31 janvier 2027</span>`,
+    "ev-cerimonia": "Cérémonie <span>· 30 avril</span>",
+    "ev-ricevimento": "Réception <span>· 30 avril</span>",
+    "ev-grigliata": "Barbecue <span>· 1er mai</span>",
+    "ev-grigliata@A": "La fête continue <span>· 1er mai</span>", "ev-grigliata@C": "La fête <span>· 1er mai</span>",
+    "att-legend": "Votre réponse", "att-si": "Nous serons là", "att-no": "Nous ne pourrons pas venir",
+    "party-l": "Nom du groupe ou de la famille", "party-h": "Ex. « Famille Martin » ou « Marc et Julie »",
+    "who-h": "Qui êtes-vous", "who-hint": "Une fiche par personne, enfants compris.",
+    "add": "+ Ajouter une personne", "notes-l": `Remarques <span class="opt">facultatif</span>`,
+    "privacy": "Nous utiliserons ces informations uniquement pour organiser le mariage et les supprimerons après la fête.",
+    "submit": "Confirmer", "sending": "Envoi…",
+    "change": "Vous avez déjà répondu et souhaitez modifier quelque chose ? Écrivez-nous directement.",
+    "eb-gift": "Cadeaux", "gift-text": "<p>Cette dernière année a été faite de valises, de vols au-dessus de l’océan, d’au revoir et de jours comptés avant de nous retrouver.</p><p>Aujourd’hui commence le voyage que nous avons désiré plus que tout : une vie de tous les jours, simple, ensemble.</p><p>Une vie que nous espérons continuer à partager avec vous aussi, entre rencontres, récits et nouvelles occasions de nous retrouver, où que nous soyons.</p><p>Le plus beau cadeau, le jour de notre mariage, sera de partager ce commencement avec vous. Cependant, pour ceux qui souhaitent nous accompagner aussi dans nos prochaines aventures, voici nos coordonnées.</p>", "gift-text@C": "<p>Cette dernière année a été faite de valises, de vols au-dessus de l’océan, d’au revoir et de jours comptés avant de nous retrouver.</p><p>Aujourd’hui commence le voyage que nous avons désiré plus que tout : une vie de tous les jours, simple, ensemble.</p><p>Une vie que nous espérons continuer à partager avec vous aussi, entre rencontres, récits et nouvelles occasions de nous retrouver, où que nous soyons.</p>",
+    "gift-holder": "Titulaire", "gift-holder-v": `${tbd("fr", "noms à confirmer")}`,
+    "gift-iban-v": `${tbd("fr", "IBAN à confirmer")}`, "copy": "Copier l’IBAN", "copied": "Copié",
+    "contact": `Pour toute question : ${tbd("fr", "nom · téléphone à confirmer")}`,
+    "person": "Personne", "remove": "Retirer", "name-l": "Prénom et nom",
+    "adult": "Adulte", "minor": "&lt; 18 ans", "age-l": "Âge", "attends": "Participe à",
+    "diet-l": `Allergies ou régime alimentaire <span class="opt">facultatif</span>`, "none": "Aucune",
+    "g-regime": "Régime alimentaire", "g-intol": "Intolérances et maladie cœliaque", "g-allergie": "Allergies", "g-altro": "Absent de la liste",
+    "dd-done": "OK", "other-l": "Quelle autre allergie ou contrainte ?",
+    "e-party": "Indiquez un nom pour votre groupe, pour que nous sachions qui vous êtes.",
+    "e-name": "Indiquez le prénom et le nom.", "e-age": "Âge de 0 à 17 ans.",
+    "e-other": "Précisez laquelle, ou décochez « Autre ».",
+    "e-none": "Cochez au moins un événement pour au moins une personne, ou choisissez « Nous ne pourrons pas venir ».",
+    "e-send": "Nous n'avons pas pu envoyer votre réponse. Vérifiez votre connexion et réessayez.",
+    "thanks": "Merci !", "got": "Nous avons bien reçu la réponse de <b>{party}</b>.",
+    "done-yes": "Nous avons hâte de faire la fête avec vous.", "done-no": "Vous allez nous manquer. Merci de nous avoir prévenus.",
+    "d": { vegetariano: "Végétarien", vegano: "Végan", glutine: "Gluten (maladie cœliaque)", lattosio: "Lactose",
+      latte: "Lait et produits laitiers", uova: "Œufs", frutta_guscio: "Fruits à coque", arachidi: "Arachides", pesce: "Poisson",
+      crostacei: "Crustacés", molluschi: "Mollusques", soia: "Soja", sesamo: "Sésame", sedano: "Céleri",
+      senape: "Moutarde", solfiti: "Sulfites", lupini: "Lupin", altro: "Autre" },
+  },
+  es: {
+    "intro": "A todas las personas que queremos,<br>nos alegra anunciaros nuestra boda",
+    "date-hero": "30 de abril de 2027",
+    "fallback": "Para ver todos los detalles, abrid el enlace que aparece en vuestra invitación.",
+    "eb-cer": "La ceremonia", "date-cer": "Viernes 30 de abril de 2027", "time-cer": "A las 15:15",
+    "eb-rec": "La celebración",
+    "rec-lead": "A continuación, será una gran alegría reunirnos para celebrar juntos este día tan especial en el",
+    "time-rec": "A las 17:30",
+    "time-gr": "A las 12:30",
+    "eb-gr": "Al día siguiente",
+    "gr-lead-a": "Sale y Pepe han olido carne a la brasa y comida callejera siciliana,<br>¡parece que la fiesta continúa!",
+    "gr-lead-c1": "Sale y Pepe han olido carne a la brasa y comida callejera siciliana, ¡y nosotros ya oímos la música!",
+    "gr-lead-c2": "¡Nos encantaría pasar este día con vosotros!",
+    "date-gr": "1 de mayo de 2027",
+    "gr-addr": `Os esperamos en Via Settipani 53, Balestrate`,
+    "eb-go": "Cómo llegar", "h-go": "Direcciones", "card-gr": "La barbacoa", "card-gr@A": "La fiesta continúa", "card-gr@C": "La fiesta",
+    "addr-gr": `Via Settipani 53, Balestrate`,
+    "park": `<strong>Aparcamiento</strong> · ${tbd("es", "información próximamente")}`,
+    "maps": "Abrir en Maps",
+    "ztl": "El centro histórico de Palermo tiene zonas de tráfico restringido (ZTL). El viernes 30 de abril la ZTL diurna está activa hasta las 20:00: si venís en coche, consultad horarios y permisos en la <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">web del Ayuntamiento de Palermo</a>.",
+    "rsvp-lead": "Esperamos teneros a todos a nuestro lado para crear juntos uno de los recuerdos más bonitos de nuestra vida.",
+    "rsvp-h": "Confirmad vuestra asistencia",
+    "rsvp-by": `antes del <span class="time">31 de enero de 2027</span>`,
+    "ev-cerimonia": "Ceremonia <span>· 30 de abril</span>",
+    "ev-ricevimento": "Celebración <span>· 30 de abril</span>",
+    "ev-grigliata": "Barbacoa <span>· 1 de mayo</span>",
+    "ev-grigliata@A": "La fiesta continúa <span>· 1 de mayo</span>", "ev-grigliata@C": "La fiesta <span>· 1 de mayo</span>",
+    "att-legend": "Vuestra respuesta", "att-si": "Allí estaremos", "att-no": "No podremos ir",
+    "party-l": "Nombre del grupo o de la familia", "party-h": "P. ej. «Familia García» o «Marcos y Julia»",
+    "who-h": "Quiénes sois", "who-hint": "Una ficha por persona, niños incluidos.",
+    "add": "+ Añadir persona", "notes-l": `Notas <span class="opt">opcional</span>`,
+    "privacy": "Usaremos estos datos solo para organizar la boda y los borraremos después de la fiesta.",
+    "submit": "Confirmar", "sending": "Enviando…",
+    "change": "¿Ya habéis respondido y queréis cambiar algo? Escribidnos directamente.",
+    "eb-gift": "Regalos", "gift-text": "<p>Este último año ha estado hecho de maletas, vuelos cruzando el océano, despedidas y días contados hasta volver a abrazarnos.</p><p>Ahora empieza el viaje que más hemos deseado: una vida cotidiana, sencilla, juntos.</p><p>Una vida que esperamos seguir compartiendo también con vosotros, entre encuentros, historias y nuevas ocasiones para reencontrarnos, dondequiera que estemos.</p><p>Nuestro mejor regalo el día de nuestra boda será compartir con vosotros este comienzo. Aun así, para quien desee acompañarnos también con un apoyo para nuestras próximas aventuras juntos, aquí tenéis nuestros datos.</p>", "gift-text@C": "<p>Este último año ha estado hecho de maletas, vuelos cruzando el océano, despedidas y días contados hasta volver a abrazarnos.</p><p>Ahora empieza el viaje que más hemos deseado: una vida cotidiana, sencilla, juntos.</p><p>Una vida que esperamos seguir compartiendo también con vosotros, entre encuentros, historias y nuevas ocasiones para reencontrarnos, dondequiera que estemos.</p>",
+    "gift-holder": "Titular", "gift-holder-v": `${tbd("es", "nombres por confirmar")}`,
+    "gift-iban-v": `${tbd("es", "IBAN por confirmar")}`, "copy": "Copiar IBAN", "copied": "Copiado",
+    "contact": `Para cualquier duda: ${tbd("es", "nombre · teléfono por confirmar")}`,
+    "person": "Persona", "remove": "Quitar", "name-l": "Nombre y apellidos",
+    "adult": "Adulto", "minor": "&lt; 18 años", "age-l": "Edad", "attends": "Asiste a",
+    "diet-l": `Alergias o necesidades alimentarias <span class="opt">opcional</span>`, "none": "Ninguna",
+    "g-regime": "Dieta", "g-intol": "Intolerancias y celiaquía", "g-allergie": "Alergias", "g-altro": "No está en la lista",
+    "dd-done": "Listo", "other-l": "¿Qué otra alergia o necesidad?",
+    "e-party": "Escribid un nombre para el grupo, así sabremos quiénes sois.",
+    "e-name": "Escribid nombre y apellidos.", "e-age": "Edad de 0 a 17.",
+    "e-other": "Indicad cuál, o desmarcad «Otro».",
+    "e-none": "Marcad al menos un evento para al menos una persona, o elegid «No podremos ir».",
+    "e-send": "No hemos podido enviar vuestra respuesta. Revisad la conexión e intentadlo de nuevo.",
+    "thanks": "¡Gracias!", "got": "Hemos recibido la respuesta de <b>{party}</b>.",
+    "done-yes": "¡Estamos deseando celebrarlo con vosotros!", "done-no": "Os echaremos de menos. Gracias por avisarnos.",
+    "d": { vegetariano: "Vegetariano", vegano: "Vegano", glutine: "Gluten (celiaquía)", lattosio: "Lactosa",
+      latte: "Leche y derivados", uova: "Huevos", frutta_guscio: "Frutos de cáscara", arachidi: "Cacahuetes", pesce: "Pescado",
+      crostacei: "Crustáceos", molluschi: "Moluscos", soia: "Soja", sesamo: "Sésamo", sedano: "Apio",
+      senape: "Mostaza", solfiti: "Sulfitos", lupini: "Altramuces", altro: "Otro" },
+  },
+};
+
+// Bank details for the gifts section: fill these in and the placeholders disappear in every language.
+const GIFT = { holder: "Paolo Gennaro Madonia e Flavia Palazzolo", iban: "" };   // e.g. iban: "IT60 X054 2811 1010 0000 0123 456"
+
+// Language: saved choice → browser language → Italian
+let LANG = "it";
+try { LANG = localStorage.getItem("lang") || ""; } catch {}
+if (!I18N[LANG]) LANG = (navigator.language || "it").slice(0, 2);
+if (!I18N[LANG]) LANG = "it";
+
+// t("card-gr") returns "card-gr@A" when the guest is on view A and that variant exists
+const t = (k, vars = {}) => {
+  const vk = `${k}@${document.body.dataset.view}`;
+  return (I18N[LANG][vk] ?? I18N[LANG][k] ?? I18N.it[vk] ?? I18N.it[k] ?? k).replace(/\{(\w+)\}/g, (_, v) => vars[v] ?? "");
+};
+const translateStatic = () => {
+  document.querySelectorAll("[data-i18n]").forEach(el => (el.innerHTML = t(el.dataset.i18n)));
+  if (GIFT.holder) document.getElementById("gift-holder").textContent = GIFT.holder;
+  if (GIFT.iban) document.getElementById("iban").textContent = GIFT.iban;
+  document.getElementById("copy-iban").hidden = !GIFT.iban;
+};
+
+function setLang(l) {
+  LANG = I18N[l] ? l : "it";
+  try { localStorage.setItem("lang", LANG); } catch {}
+  document.documentElement.lang = LANG;
+  translateStatic();
+  document.querySelectorAll("#lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === LANG));
+  if (window.renderRsvp) renderRsvp();
+}
+// copy the IBAN; if the clipboard is refused, select it so the guest can copy by hand
+document.getElementById("copy-iban").addEventListener("click", async e => {
+  const b = e.currentTarget, iban = document.getElementById("iban");
+  try { await navigator.clipboard.writeText(GIFT.iban.replace(/\s+/g, "")); b.textContent = t("copied"); }
+  catch { const rg = document.createRange(); rg.selectNodeContents(iban); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(rg); }
+  setTimeout(() => (b.textContent = t("copy")), 2000);
+});
+document.getElementById("lang").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (b) setLang(b.dataset.lang);
+});
+</script>
+
+<script>
+// Invite codes → views. A = both days, B = 30 Apr only, C = ceremony + 1 May.
+// Codes are deliberately non-obvious so B/C guests can't just guess "A".
+const VIEWS = { k7x2: "A", m3q9: "B", r5w8: "C" };
+const PREVIEW = false; // false at launch: hides the switcher, no default view
+
+// Live site uses ?i=CODE; the preview frame only passes #CODE, so read both.
+function currentCode() {
+  const q = new URLSearchParams(location.search).get("i");
+  return q || location.hash.slice(1) || null;
+}
+
+function apply(code) {
+  let view = VIEWS[code];
+  if (!view && PREVIEW && !code) view = "A"; // preview opens on the fullest view
+  document.body.dataset.view = view || "none";
+
+  // Every element tagged data-show="A B …" is visible only in those views
+  document.querySelectorAll("[data-show]").forEach(el => {
+    el.hidden = !(view && el.dataset.show.split(" ").includes(view));
+  });
+  document.getElementById("fallback").hidden = !!view;
+  translateStatic();                     // some labels differ per view
+  if (window.renderRsvp) renderRsvp();   // event checkboxes depend on the view
+  if (window.buildThread) buildThread(); // sections changed → re-route the thread
+
+  document.querySelectorAll("#switch button").forEach(b => {
+    const on = view ? VIEWS[b.dataset.code] === view : b.dataset.code === "none";
+    b.setAttribute("aria-pressed", on);
+  });
+}
+
+const sw = document.getElementById("switch");
+if (PREVIEW && sw) {
+  sw.addEventListener("click", e => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    location.hash = b.dataset.code;
+    apply(b.dataset.code);
+    window.scrollTo({ top: 0 });
+  });
+} else {
+  sw?.remove();   // the public build has no switcher at all
+}
+addEventListener("hashchange", () => apply(currentCode()));
+apply(currentCode());
+</script>
+
+<script>
+/* RSVP form. One submission = one party; the sheet gets one row per person.
+   Every row carries the invite view (A/B/C), so all three links feed the same sheet. */
+(() => {
+  const ENDPOINT = "https://script.google.com/macros/s/AKfycbynrveCfJpO0Qh6_hUlvW0hWk0CUmC_J3ZVhDTau8Kv5DDWBQe0DwAY76j8RL6gOHRNmg/exec"; // Apps Script web app (RSVP → Google Sheet)
+  const EVENTS = [
+    { id: "cerimonia",   views: "ABC" },
+    { id: "ricevimento", views: "AB"  },
+    { id: "grigliata",   views: "AC"  },
+  ];
+  // Allergens follow the EU list of 14 (Reg. 1169/2011, Annex II) that caterers already label by.
+  const DIET = [
+    { g: "g-regime",   items: ["vegetariano", "vegano"] },
+    { g: "g-intol",    items: ["glutine", "lattosio"] },
+    { g: "g-allergie", items: ["latte", "uova", "frutta_guscio", "arachidi", "pesce", "crostacei", "molluschi",
+                               "soia", "sesamo", "sedano", "senape", "solfiti", "lupini"] },
+  ];
+  const MAX = 12, KEY = "rsvp-draft";
+  const $ = s => document.querySelector(s);
+  const form = $("#rsvp-form"), list = $("#people"), done = $("#rsvp-done"), btn = $("#submit");
+  const view = () => document.body.dataset.view;
+  const invited = () => EVENTS.filter(e => e.views.includes(view()));
+  const blank = () => ({ name: "", type: "adulto", age: "", ev: { cerimonia: true, ricevimento: true, grigliata: true }, diet: [], dietOther: "" });
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const dl = (id, lang = LANG) => I18N[lang].d[id];           // diet label
+  const dietSummary = p => p.diet.length ? p.diet.map(id => dl(id)).join(", ") : t("none");
+
+  // state, restored from an unsent draft if the guest left mid-way
+  let S = { attending: "si", party: "", notes: "", people: [blank()] };
+  let last = null; // last submitted payload, to re-draw the thank-you in another language
+  try { const d = JSON.parse(localStorage.getItem(KEY)); if (d && Array.isArray(d.people) && d.people.length) S = d; } catch {}
+  S.people.forEach(p => { // upgrade drafts saved by older versions of the form
+    if (!Array.isArray(p.diet)) p.diet = [];
+    p.dietOther ??= "";
+    if (p.type === "bambino") p.type = "minore";
+  });
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch {} };
+
+  const personHTML = (p, i) => `
+    <li class="person" data-i="${i}">
+      <div class="person-head">
+        <span class="eyebrow">${t("person")} ${i + 1}</span>
+        ${i ? `<button type="button" class="link-btn" data-act="rm">${t("remove")}</button>` : ""}
+      </div>
+      <div class="field">
+        <label for="p${i}-name">${t("name-l")}</label>
+        <input id="p${i}-name" type="text" data-k="name" value="${esc(p.name)}" autocomplete="off">
+        <p class="err" hidden></p>
+      </div>
+      <div class="row">
+        <div class="seg" role="radiogroup">
+          <input type="radio" id="p${i}-ad" name="p${i}-type" value="adulto" data-type ${p.type === "adulto" ? "checked" : ""}><label for="p${i}-ad">${t("adult")}</label>
+          <input type="radio" id="p${i}-ch" name="p${i}-type" value="minore" data-type ${p.type === "minore" ? "checked" : ""}><label for="p${i}-ch">${t("minor")}</label>
+        </div>
+        <div class="age field" ${p.type === "minore" ? "" : "hidden"}>
+          <label for="p${i}-age">${t("age-l")}</label>
+          <input id="p${i}-age" type="number" inputmode="numeric" min="0" max="17" data-k="age" value="${esc(p.age)}">
+          <p class="err" hidden></p>
+        </div>
+      </div>
+      <fieldset class="field yes-only">
+        <legend>${t("attends")}</legend>
+        <div class="checks">${invited().map(e => `
+          <input type="checkbox" id="p${i}-${e.id}" data-ev="${e.id}" ${p.ev[e.id] ? "checked" : ""}>
+          <label for="p${i}-${e.id}">${t("ev-" + e.id)}</label>`).join("")}
+        </div>
+      </fieldset>
+      <div class="field yes-only">
+        <span class="flabel">${t("diet-l")}</span>
+        <details class="dd">
+          <summary><span class="dd-val">${esc(dietSummary(p))}</span></summary>
+          <div class="dd-panel">
+            ${DIET.map(g => `<p class="dd-g">${t(g.g)}</p>` + g.items.map(id => `
+              <label class="dd-opt"><input type="checkbox" data-diet="${id}" ${p.diet.includes(id) ? "checked" : ""}> ${dl(id)}</label>`).join("")).join("")}
+            <p class="dd-g">${t("g-altro")}</p>
+            <label class="dd-opt"><input type="checkbox" data-diet="altro" ${p.diet.includes("altro") ? "checked" : ""}> ${dl("altro")}</label>
+            <button type="button" class="link-btn dd-close" data-act="close">${t("dd-done")}</button>
+          </div>
+        </details>
+      </div>
+      <div class="field yes-only other" ${p.diet.includes("altro") ? "" : "hidden"}>
+        <label for="p${i}-other">${t("other-l")}</label>
+        <input id="p${i}-other" type="text" data-k="dietOther" value="${esc(p.dietOther)}" autocomplete="off">
+        <p class="err" hidden></p>
+      </div>
+    </li>`;
+
+  function render() {
+    list.innerHTML = S.people.map(personHTML).join("");
+    $("#add-person").hidden = S.people.length >= MAX;
+    form.classList.toggle("declined", S.attending === "no");
+    if (!done.hidden && last) showDone(last, false);
+  }
+
+  // restore top-level fields once
+  form.party.value = S.party; form.notes.value = S.notes;
+  form.querySelector(`[name=attending][value=${S.attending === "no" ? "no" : "si"}]`).checked = true;
+
+  form.addEventListener("input", e => {
+    const t_ = e.target, li = t_.closest(".person");
+    t_.closest(".field")?.classList.remove("invalid");
+    const fe = t_.closest(".field")?.querySelector(".err"); if (fe) fe.hidden = true;
+    if (li) {
+      const p = S.people[li.dataset.i];
+      if (t_.dataset.k) p[t_.dataset.k] = t_.value;
+      if (t_.dataset.ev) p.ev[t_.dataset.ev] = t_.checked;
+      if (t_.hasAttribute("data-type")) { p.type = t_.value; li.querySelector(".age").hidden = p.type !== "minore"; }
+      if (t_.dataset.diet) {
+        p.diet = t_.checked ? [...p.diet, t_.dataset.diet] : p.diet.filter(d => d !== t_.dataset.diet);
+        li.querySelector(".dd-val").textContent = dietSummary(p);
+        li.querySelector(".other").hidden = !p.diet.includes("altro");
+      }
+    } else if (t_.name === "attending") {
+      S.attending = t_.value; form.classList.toggle("declined", S.attending === "no");
+    } else if (["party", "notes"].includes(t_.id)) S[t_.id] = t_.value;
+    $("#form-err").hidden = true;
+    save();
+  });
+
+  form.addEventListener("click", e => {
+    if (e.target.dataset.act === "close") {
+      e.target.closest("details").open = false;
+    } else if (e.target.dataset.act === "rm") {
+      S.people.splice(+e.target.closest(".person").dataset.i, 1); render(); save();
+    } else if (e.target.id === "add-person") {
+      S.people.push(blank()); render(); save();
+      list.lastElementChild.querySelector("input").focus();
+    }
+  });
+
+  function validate() {
+    form.querySelectorAll(".invalid").forEach(f => f.classList.remove("invalid"));
+    form.querySelectorAll(".err").forEach(x => (x.hidden = true));
+    let first = null;
+    const err = (el, key) => {
+      const f = el.closest(".field"), m = f.querySelector(".err");
+      f.classList.add("invalid"); m.textContent = t(key); m.hidden = false; first ??= el;
+    };
+    if (!S.party.trim()) err(form.party, "e-party");
+    S.people.forEach((p, i) => {
+      if (!p.name.trim()) err($(`#p${i}-name`), "e-name");
+      const age = Number(p.age);
+      if (p.type === "minore" && (p.age === "" || !Number.isInteger(age) || age < 0 || age > 17)) err($(`#p${i}-age`), "e-age");
+      if (S.attending === "si" && p.diet.includes("altro") && !p.dietOther.trim()) err($(`#p${i}-other`), "e-other");
+    });
+    const anyone = S.people.some(p => invited().some(e => p.ev[e.id]));
+    if (!first && S.attending === "si" && !anyone) {
+      const m = $("#form-err"); m.textContent = t("e-none"); m.hidden = false;
+      first = list.querySelector(".checks input");
+    }
+    first?.focus();
+    return !first;
+  }
+
+  // What we send. Values are always Italian so the sheet stays consistent; "lang" records the guest's language.
+  // Events outside the guest's view are null → "—" in the sheet.
+  const payload = () => ({
+    view: view(),
+    lang: LANG,
+    partyName: S.party.trim(),
+    attending: S.attending === "si",
+    notes: S.notes.trim(),
+    people: S.people.map(p => ({
+      name: p.name.trim(),
+      type: p.type,
+      age: p.type === "minore" ? Number(p.age) : null,
+      events: Object.fromEntries(EVENTS.map(e => [e.id, e.views.includes(view()) ? S.attending === "si" && !!p.ev[e.id] : null])),
+      // "Glutine (celiachia), Uova, Altro: kiwi"
+      diet: S.attending !== "si" ? "" : p.diet.filter(d => d !== "altro").map(d => dl(d, "it"))
+        .concat(p.diet.includes("altro") ? [`Altro: ${p.dietOther.trim()}`] : []).join(", "),
+    })),
+    website: form.website.value, // honeypot
+    sentAt: new Date().toISOString(),
+  });
+
+  // Same row layout the Apps Script will write (step 4) — shown here in preview only
+  const HEAD = ["Data", "ID risposta", "Invito", "Lingua", "Gruppo (scritto dagli ospiti)", "Abbinato a (Invitati)", "Risposta", "Nome", "Tipo", "Età", "Cerimonia", "Ricevimento", "Festa 1° maggio", "Allergie / dieta", "Note"];
+  const yn = v => (v === null ? "—" : v ? "Sì" : "No");
+  const rows = pl => pl.people.map(p => [
+    new Date(pl.sentAt).toLocaleString("it-IT"), "(auto)", pl.view, pl.lang.toUpperCase(), pl.partyName, "(auto o a mano)",
+    pl.attending ? "Ci saremo" : "Non ci saremo",
+    p.name, p.type === "minore" ? "< 18 anni" : "Adulto", p.age ?? "",
+    yn(p.events.cerimonia), yn(p.events.ricevimento), yn(p.events.grigliata), p.diet, pl.notes,
+  ]);
+
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    if (!validate()) return;
+    const pl = payload();
+    btn.disabled = true; btn.textContent = t("sending");
+    try {
+      if (pl.website) { /* bot: pretend it worked */ }
+      else if (ENDPOINT) {
+        // text/plain avoids a CORS preflight, which Apps Script can't answer
+        const r = await fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(pl) });
+        const j = await r.json();          // the script answers {ok:true} or {ok:false, error}
+        if (!j.ok) throw new Error(j.error);
+      } else await new Promise(r => setTimeout(r, 600));
+    } catch {
+      const m = $("#form-err"); m.textContent = t("e-send"); m.hidden = false;
+      btn.disabled = false; btn.textContent = t("submit");
+      return;
+    }
+    try { localStorage.removeItem(KEY); } catch {}
+    last = pl;
+    showDone(pl, true);
+  });
+
+  function showDone(pl, scroll) {
+    done.innerHTML = `
+      <p class="script venue">${t("thanks")}</p>
+      <p>${t("got", { party: esc(pl.partyName) })}</p>
+      <p class="note">${t(pl.attending ? "done-yes" : "done-no")}</p>
+      ${PREVIEW ? `
+      <div class="sheet-preview">
+        <p class="eyebrow">Anteprima · righe che finiranno nel foglio</p>
+        <div class="sheet-wrap"><table>
+          <thead><tr>${HEAD.map(h => `<th>${h}</th>`).join("")}</tr></thead>
+          <tbody>${rows(pl).map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody>
+        </table></div>
+        <p class="hint">${ENDPOINT ? "" : "Anteprima: nessun dato è stato inviato. Il collegamento al foglio arriva allo step 4."}</p>
+        <button type="button" class="link-btn" id="again">Compila di nuovo</button>
+      </div>` : ""}`;
+    form.hidden = true; done.hidden = false;
+    if (scroll) done.scrollIntoView({ behavior: "smooth", block: "center" });
+    $("#again")?.addEventListener("click", () => {
+      S = { attending: "si", party: "", notes: "", people: [blank()] };
+      last = null; form.reset(); done.hidden = true; form.hidden = false;
+      render(); btn.disabled = false; btn.textContent = t("submit");
+    });
+  }
+
+  // close an open dropdown when tapping elsewhere
+  document.addEventListener("click", e => {
+    document.querySelectorAll(".dd[open]").forEach(d => { if (!d.contains(e.target)) d.open = false; });
+  });
+
+  window.renderRsvp = render;
+  setLang(LANG); // translates the static text and draws the form
+})();
+</script>
+
+<script>
+/* The thread: one SVG path running down the page side. It ties a loop at section breaks, runs into the
+   church drawing's ground line (the drawing carries it across), passes just below the library drawing,
+   and ends by winding a ball of yarn between the cats. It "draws" as far as the reader has scrolled. */
+(() => {
+  const NS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(NS, "svg");
+  svg.id = "thread";
+  svg.setAttribute("aria-hidden", "true");
+  // One <path> per stretch of thread between drawings. Browsers restart a dashed stroke at every
+  // jump inside a single path, which made the stretches after the church appear already drawn.
+  let parts = []; // { el, len, start }
+  document.body.prepend(svg);
+  document.body.classList.add("threaded");
+
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const yarn = document.querySelector(".yarn");
+  let LEN = 0, lens = [], ys = [], shown = 0, raf = 0, sw = 1.6, ballFrom = Infinity;
+  // length of the ball's windings = the part of the last piece after its last curve command
+  const ballLen = el => { const d = el.getAttribute("d"), cut = d.lastIndexOf(" C"), tmp = document.createElementNS(NS, "path");
+    tmp.setAttribute("d", d.slice(0, d.indexOf(" L", cut))); svg.append(tmp); const l = el.getTotalLength() - tmp.getTotalLength(); tmp.remove(); return l; };
+
+  const rel = (el, o) => { const r = el.getBoundingClientRect(); return { l: r.left - o.left, t: r.top - o.top, w: r.width, h: r.height }; };
+
+  function build() {
+    svg.style.height = "0px"; // don't let the old thread inflate the page height we measure
+    const o = document.body.getBoundingClientRect();
+    const W = document.body.clientWidth, H = document.body.scrollHeight;
+    svg.setAttribute("width", W); svg.setAttribute("height", H);
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    svg.style.height = H + "px";
+    placeMarks(H);
+
+    // Thread runs in the side gutter on phones, just outside the column on wider screens
+    const col = rel(document.querySelector("main"), o);
+    const L = Math.max(7, col.l - 28), R = W - L;
+    const a = col.l < 40 ? 3 : 8; // side wobble amplitude
+
+    // match the drawings' line weight (church line ≈ 8 px on its 1358 px source)
+    const church = document.querySelector("img[data-line]:not([hidden])");
+    sw = church && church.offsetWidth ? Math.min(2.6, Math.max(1.2, 8 * church.offsetWidth / 1358)) : 1.6;
+
+    const items = [...document.querySelectorAll("section:not([hidden]) .curl, section:not([hidden]) img[data-line]")];
+
+    let side = L, y = 0, d = `M${L},0`, crossed = false;
+    const segs = [];   // stretches of thread, split where the church drawing carries it across
+    const down = to => { const h = to - y, w = Math.min(a, h / 120); // gentle drift, never a kink on short stretches
+      d += ` C${side + w},${y + h / 3} ${side - w},${y + 2 * h / 3} ${side},${to}`; y = to; };
+
+    // swing in from the side, tie a loop at c, carry on down the opposite side
+    const tie = c => {
+      const dir = side === L ? 1 : -1, other = side === L ? R : L;
+      if (c.y - 55 > y) down(c.y - 55);
+      // swing in towards the centre…
+      d += ` C${side},${y + 40} ${c.x - 90 * dir},${c.y + 6} ${c.x - 24 * dir},${c.y + 6}`;
+      // …tie a loop (two cubics crossing over themselves)…
+      d += ` C${c.x + 10 * dir},${c.y + 6} ${c.x + 14 * dir},${c.y - 22} ${c.x},${c.y - 22}`;
+      d += ` C${c.x - 14 * dir},${c.y - 22} ${c.x - 10 * dir},${c.y + 6} ${c.x + 24 * dir},${c.y + 6}`;
+      // …and carry on down the opposite side
+      d += ` C${c.x + 90 * dir},${c.y + 6} ${other},${c.y + 20} ${other},${c.y + 60}`;
+      side = other; y = c.y + 60;
+    };
+
+    for (const [i, el] of items.entries()) {
+      const r = rel(el, o);
+      if (el.tagName === "IMG") {
+        // pass below the drawing with the same swing and loop as at any section break, tied at the next
+        // section's marker, so the spacing to the following section is the same everywhere
+        const nx = items[i + 1], nr = nx && nx.tagName !== "IMG" ? rel(nx, o) : null;
+        tie({ x: r.l + r.w / 2, y: nr ? nr.t + nr.h / 2 : r.t + r.h + 110 });
+        crossed = true;
+        continue;
+      }
+      // every section break gets its loop, except right after a drawing: the loop under it already crossed the page
+      if (crossed) { crossed = false; continue; }
+      tie({ x: r.l + r.w / 2, y: r.t + r.h / 2 });
+    }
+
+    // finish: along the ground under the cats, then up into the ball of yarn
+    // the thread comes in under the grey cat: put the grey cat on the side the thread is on
+    document.querySelector(".finale").classList.toggle("flip", side === R);
+    const yb = rel(yarn, o), cats = rel(document.querySelector(".finale .art"), o), dir = side === L ? 1 : -1;
+    const g = cats.t + cats.h + 3;                                   // ground, just under the cats
+    const bx = yb.l + yb.w / 2 - dir * yb.w * 0.3, by = yb.t + yb.h * 0.93; // bottom of the ball, on the near side
+    const sx = dir > 0 ? cats.l : cats.l + cats.w;                    // where the drawing starts
+    if (g - 60 > y) down(g - 60);
+    d += ` C${side},${g - 10} ${sx - dir * 30},${g} ${sx},${g}`;
+    d += ` C${(sx + bx) / 2},${g + 2} ${bx - dir * 12},${g} ${bx},${by}`;
+
+    // …and wind into a ball: one round outer loop, then loops at new angles and flatter shapes that cross
+    // each other, like the reference sketch (each loop eases into the next one's shape)
+    const cx = yb.l + yb.w / 2, cy = yb.t + yb.h / 2, br = yb.w / 2;
+    const a0 = Math.atan2(by - cy, bx - cx);
+    const LOOPS = [[1.00, 1.00, 0], [0.96, 0.50, 0.5], [0.92, 0.80, 1.3], [0.95, 0.38, 2.1], [0.88, 0.66, 2.7], [0.80, 0.30, 3.5]];
+    const ease = f => f * f * (3 - 2 * f);
+    for (let t = 0.1; t <= (LOOPS.length - 1) * 2 * Math.PI; t += 0.1) {
+      const f = t / (2 * Math.PI), i = Math.min(Math.floor(f), LOOPS.length - 2), e = ease(f - i);
+      const [rxA, ryA, tA] = LOOPS[i], [rxB, ryB, tB] = LOOPS[i + 1];
+      const rx = br * (rxA + (rxB - rxA) * e), ry = br * (ryA + (ryB - ryA) * e), tilt = tA + (tB - tA) * e;
+      const a = a0 - dir * t, ex = rx * Math.cos(a - tilt), ey = ry * Math.sin(a - tilt);
+      d += ` L${(cx + ex * Math.cos(tilt) - ey * Math.sin(tilt)).toFixed(1)},${(cy + ex * Math.sin(tilt) + ey * Math.cos(tilt)).toFixed(1)}`;
+    }
+    segs.push({ d });
+    svg.replaceChildren();
+    parts = []; LEN = 0;
+    for (const seg of segs) {
+      const el = document.createElementNS(NS, "path");
+      el.setAttribute("d", seg.d);
+      el.style.strokeWidth = sw;
+      svg.append(el);
+      const len = el.getTotalLength();
+      el.style.strokeDasharray = `${len} ${len + 1}`;
+      parts.push({ el, len, start: LEN });
+      LEN += len;
+    }
+    ballFrom = LEN - ballLen(parts[parts.length - 1].el);
+
+    // length ↔ height lookup across all pieces; running max keeps it monotonic despite the loops
+    lens = []; ys = [];
+    let m = -Infinity;
+    for (const p of parts)
+      for (let s = 0; s <= p.len; s += 6) { m = Math.max(m, p.el.getPointAtLength(s).y); lens.push(p.start + s); ys.push(m); }
+    paint();
+    kick();
+  }
+
+  // how much thread should be visible: up to ~70% down the screen
+  // Which part of the page is on screen? Some apps show the page at full height and scroll it from the
+  // outside, so the page's own scroll position never changes. Invisible markers every 40 px, watched with an
+  // IntersectionObserver (measured against the real screen), tell us what the reader can actually see.
+  const STEP = 40, marks = document.createElement("div"), seen = new Set();
+  marks.setAttribute("aria-hidden", "true");
+  marks.style.cssText = "position:absolute;top:0;left:0;width:1px;pointer-events:none;visibility:hidden";
+  document.body.append(marks);
+  let vis = null;   // { top, bot } in page px, once known
+  const io = new IntersectionObserver(entries => {
+    for (const e of entries) e.isIntersecting ? seen.add(+e.target.dataset.y) : seen.delete(+e.target.dataset.y);
+    if (seen.size) { const v = [...seen]; vis = { top: Math.min(...v), bot: Math.max(...v) + STEP }; }
+    kick();
+  });
+  function placeMarks(H) {
+    io.disconnect(); seen.clear(); marks.replaceChildren();
+    for (let y = 0; y < H; y += STEP) {
+      const m = document.createElement("div"); m.dataset.y = y;
+      m.style.cssText = `position:absolute;left:0;top:${y}px;width:1px;height:${STEP}px`;
+      marks.append(m); io.observe(m);
+    }
+  }
+
+  function targetLen() {
+    if (reduce) return LEN;
+    const H = document.documentElement.scrollHeight, off = document.body.getBoundingClientRect().top + scrollY;
+    // prefer the page's own scrolling when it does scroll; otherwise the markers (all in page-body px)
+    const scrolls = H > innerHeight + 40;
+    const top = scrolls ? scrollY - off : vis ? vis.top : 0, bot = scrolls ? top + innerHeight : vis ? vis.bot : innerHeight;
+    if (bot >= H - off - 4) return LEN;                             // at the very bottom: finish
+    const t = top + (bot - top) * 0.72;
+    let lo = 0, hi = ys.length - 1;
+    if (t >= ys[hi]) return LEN;
+    while (lo < hi) { const mid = (lo + hi) >> 1; ys[mid] < t ? lo = mid + 1 : hi = mid; }
+    return lens[lo];
+  }
+
+  function tick() {
+    const target = targetLen();
+    let step = (target - shown) * 0.12; // eased follow, so it feels drawn rather than revealed
+    if (shown > ballFrom - 1 && step > 0) step = Math.min(step, 9);   // the ball winds up slowly
+    if (reduce) step = target - shown;                                   // no animation: draw it all at once
+    shown += step;
+    if (Math.abs(target - shown) < 0.5) shown = target;
+    paint();
+
+    raf = shown === target ? 0 : requestAnimationFrame(tick);
+  }
+  const kick = () => { if (!raf) raf = requestAnimationFrame(tick); };
+  // each piece shows only the part of the total length it owns; untouched pieces stay hidden
+  function paint() {
+    for (const p of parts) {
+      const local = Math.min(p.len, Math.max(0, shown - p.start));
+      p.el.style.visibility = local > 0.5 ? "visible" : "hidden"; // a zero-length round cap would show as a dot
+      p.el.style.strokeDashoffset = p.len - local;
+    }
+  }
+
+  addEventListener("scroll", kick, { passive: true });
+  let rt;
+  const rebuild = () => { clearTimeout(rt); rt = setTimeout(build, 80); };
+  addEventListener("resize", rebuild);
+  new ResizeObserver(rebuild).observe(document.querySelector("main"));
+  document.fonts && document.fonts.ready.then(build);
+
+  window.buildThread = build;
+  build();
+})();
+</script>
+
+</body>
+</html>
