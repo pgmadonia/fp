@@ -237,7 +237,7 @@ section {
 footer { text-align: center; padding-block: 1rem 3rem; display: grid; gap: 0.6rem; justify-items: center; }
 footer .sign { font-size: 2.6rem; }
 footer .contact { font-size: 1rem; color: var(--ink-soft); }
-.art-lib { width: 80%; margin-inline: auto; }
+.art-narrow { width: 80%; margin-inline: auto; }
 .finale { position: relative; width: min(100%, 22rem); margin-bottom: 0.5rem; }
 .finale .art { margin: 0; }
 /* where the thread winds into a ball: on the ground between the cats, under the grey cat's paws
@@ -369,7 +369,6 @@ button.btn { cursor: pointer; }
 /* thank-you + preview of sheet rows */
 .done { width: 100%; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem 1.2rem; display: grid; gap: 0.7rem; justify-items: center; }
 .done .venue { font-size: 3rem; }
-.sheet-preview { width: 100%; display: grid; gap: 0.5rem; margin-top: 0.8rem; text-align: left; }
 .sheet-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
 .sheet-wrap table { border-collapse: collapse; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
 .sheet-wrap th, .sheet-wrap td { padding: 0.3rem 0.6rem; border-bottom: 1px solid var(--line); white-space: nowrap; text-align: left; }
@@ -436,34 +435,8 @@ main, footer { position: relative; z-index: 1; }
     </div>
     <img class="art art-under" src="img/chiesa.webp" width="1358" height="895" alt="Disegno della Chiesa del Gesù" data-line="under">
   </section>
-
-  <!-- RICEVIMENTO — A B -->
-  <section id="ricevimento" data-show="A B">
-    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
-    <p class="eyebrow" data-i18n="eb-rec">Il ricevimento</p>
-    <p class="lead" data-i18n="rec-lead">A seguire, avremo grande gioia nel ritrovarci per festeggiare insieme questo giorno speciale presso</p>
-    <h2 class="script venue">Palazzo Francavilla</h2>
-    <div class="facts">
-      <p>Via Ruggiero Settimo 8, Palermo</p>
-      <p class="time" data-i18n="time-rec">Ore 17:30</p>
-    </div>
-    <img class="art art-lib art-under" src="img/biblioteca.webp" width="1000" height="1309" alt="La biblioteca di Palazzo Francavilla: il tavolo con il mappamondo, la libreria e la finestra sul Teatro Massimo" data-line="under">
-  </section>
-
-  <!-- GRIGLIATA — A C -->
-  <section id="grigliata" data-show="A C">
-    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
-    <p class="eyebrow" data-i18n="eb-gr">Il giorno dopo</p>
-    <p class="lead" data-show="A" data-i18n="gr-lead-a">Sale e Pepe hanno avvertito odore di carne e di rosticceria,<br>pare quindi che la festa continui!</p>
-    <p class="lead" data-show="C" data-i18n="gr-lead-c1">Sale e Pepe hanno avvertito odore di carne e di rosticceria e noi sentiamo già la musica che suona!</p>
-    <p class="lead" data-show="C" data-i18n="gr-lead-c2">Saremo felici di poter passare questa giornata insieme a voi!</p>
-    <h2 class="script venue" data-i18n="date-gr">1° Maggio 2027</h2>
-    <div class="facts">
-      <p data-i18n="gr-addr">Vi aspettiamo in Via Settipani 53, Balestrate</p>
-      <p class="time" data-i18n="time-gr">Ore 12:30</p>
-    </div>
-    <img class="art" src="img/festa.webp" width="1600" height="509" alt="I due gatti accanto al barbecue">
-  </section>
+<template data-enc="r"></template>
+<template data-enc="f"></template>
 
   <!-- COME ARRIVARE — cards filtered per view -->
   <section id="come-arrivare" data-show="A B C">
@@ -477,18 +450,8 @@ main, footer { position: relative; z-index: 1; }
         <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Chiesa%20del%20Ges%C3%B9%20di%20Casa%20Professa%2C%20Piazza%20Casa%20Professa%2021%2C%20Palermo" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="maps">Apri in Maps</span></a>
       </article>
-      <article class="card" data-show="A B">
-        <h3>Palazzo Francavilla</h3>
-        <p class="addr">Via Ruggiero Settimo 8, Palermo</p>
-        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Palazzo%20Francavilla%2C%20Via%20Ruggiero%20Settimo%208%2C%20Palermo" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="maps">Apri in Maps</span></a>
-      </article>
-      <article class="card" data-show="A C">
-        <h3 data-i18n="card-gr">La grigliata</h3>
-        <p class="addr" data-i18n="addr-gr">Via Settipani 53, Balestrate</p>
-            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=38.051614%2C13.018321" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="maps">Apri in Maps</span></a>
-      </article>
+      <template data-enc="r"></template>
+      <template data-enc="f"></template>
     </div>
     <p class="note ztl" data-i18n="ztl">Il centro storico di Palermo ha zone a traffico limitato (ZTL). Venerdì 30 aprile la ZTL diurna è attiva fino alle 20:00: se arrivate in auto, verificate orari e permessi sul <a href="https://repository.comune.palermo.it/polizia-municipale-info.php" target="_blank" rel="noopener">sito del Comune di Palermo</a>.</p>
   </section>
@@ -501,8 +464,8 @@ main, footer { position: relative; z-index: 1; }
     <p class="facts" data-i18n="rsvp-by">entro il <span class="time">31 gennaio 2027</span></p>
     <ul class="chips">
       <li data-show="A B C" data-i18n="ev-cerimonia">Cerimonia <span>· 30 aprile</span></li>
-      <li data-show="A B" data-i18n="ev-ricevimento">Ricevimento <span>· 30 aprile</span></li>
-      <li data-show="A C" data-i18n="ev-grigliata">Grigliata <span>· 1 maggio</span></li>
+      <template data-enc="r"></template>
+      <template data-enc="f"></template>
     </ul>
 
     <form id="rsvp-form" class="rsvp" novalidate>
@@ -580,18 +543,7 @@ const I18N = {
     "date-hero": "30 aprile 2027",
     "fallback": "Per vedere tutti i dettagli, aprite il link che trovate nel vostro invito.",
     "eb-cer": "La cerimonia", "date-cer": "Venerdì 30 aprile 2027", "time-cer": "Ore 15:15",
-    "eb-rec": "Il ricevimento",
-    "rec-lead": "A seguire, avremo grande gioia nel ritrovarci per festeggiare insieme questo giorno speciale presso",
-    "time-rec": "Ore 17:30",
-    "time-gr": "Ore 12:30",
-    "eb-gr": "Il giorno dopo",
-    "gr-lead-a": "Sale e Pepe hanno avvertito odore di carne e di rosticceria,<br>pare quindi che la festa continui!",
-    "gr-lead-c1": "Sale e Pepe hanno avvertito odore di carne e di rosticceria e noi sentiamo già la musica che suona!",
-    "gr-lead-c2": "Saremo felici di poter passare questa giornata insieme a voi!",
-    "date-gr": "1° Maggio 2027",
-    "gr-addr": `Vi aspettiamo in Via Settipani 53, Balestrate`,
-    "eb-go": "Come arrivare", "h-go": "Indirizzi", "card-gr": "La grigliata", "card-gr@A": "La festa continua", "card-gr@C": "La festa",
-    "addr-gr": `Via Settipani 53, Balestrate`,
+    "eb-go": "Come arrivare", "h-go": "Indirizzi",
     "park": `<strong>Parcheggio</strong> · ${tbd("it", "info in arrivo")}`,
     "maps": "Apri in Maps",
     "ztl": "Il centro storico di Palermo ha zone a traffico limitato (ZTL). Venerdì 30 aprile la ZTL diurna è attiva fino alle 20:00: se arrivate in auto, verificate orari e permessi sul <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">sito del Comune di Palermo</a>.",
@@ -599,9 +551,6 @@ const I18N = {
     "rsvp-h": "Confermate la vostra presenza",
     "rsvp-by": `entro il <span class="time">31 gennaio 2027</span>`,
     "ev-cerimonia": "Cerimonia <span>· 30 aprile</span>",
-    "ev-ricevimento": "Ricevimento <span>· 30 aprile</span>",
-    "ev-grigliata": "Grigliata <span>· 1 maggio</span>",
-    "ev-grigliata@A": "La festa continua <span>· 1 maggio</span>", "ev-grigliata@C": "La festa <span>· 1 maggio</span>",
     "att-legend": "La vostra risposta", "att-si": "Ci saremo", "att-no": "Non potremo esserci",
     "party-l": "Nome del gruppo o della famiglia", "party-h": "Es. «Famiglia Rossi» oppure «Marco e Giulia»",
     "who-h": "Chi siete", "who-hint": "Una scheda per ogni persona, bambini compresi.",
@@ -635,18 +584,7 @@ const I18N = {
     "date-hero": "30 April 2027",
     "fallback": "To see all the details, open the link in your invitation.",
     "eb-cer": "The ceremony", "date-cer": "Friday 30 April 2027", "time-cer": "At 3:15 pm",
-    "eb-rec": "The reception",
-    "rec-lead": "Afterwards, it will be a great joy to come together and celebrate this special day at",
-    "time-rec": "At 5:30 pm",
-    "time-gr": "At 12:30 pm",
-    "eb-gr": "The day after",
-    "gr-lead-a": "Sale and Pepe have caught the smell of grilled meat and Sicilian street food,<br>so it looks like the party goes on!",
-    "gr-lead-c1": "Sale and Pepe have caught the smell of grilled meat and Sicilian street food, and we can already hear the music playing!",
-    "gr-lead-c2": "We would be so happy to spend this day with you!",
-    "date-gr": "1 May 2027",
-    "gr-addr": `We'll be waiting for you at Via Settipani 53, Balestrate`,
-    "eb-go": "Getting there", "h-go": "Addresses", "card-gr": "The barbecue", "card-gr@A": "The party goes on", "card-gr@C": "The party",
-    "addr-gr": `Via Settipani 53, Balestrate`,
+    "eb-go": "Getting there", "h-go": "Addresses",
     "park": `<strong>Parking</strong> · ${tbd("en", "details coming soon")}`,
     "maps": "Open in Maps",
     "ztl": "Palermo’s historic centre has limited-traffic zones (ZTL). On Friday 30 April the daytime ZTL is active until 8 pm: if you are coming by car, check the hours and passes on the <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">City of Palermo website</a>.",
@@ -654,9 +592,6 @@ const I18N = {
     "rsvp-h": "Please confirm your attendance",
     "rsvp-by": `by <span class="time">31 January 2027</span>`,
     "ev-cerimonia": "Ceremony <span>· 30 April</span>",
-    "ev-ricevimento": "Reception <span>· 30 April</span>",
-    "ev-grigliata": "Barbecue <span>· 1 May</span>",
-    "ev-grigliata@A": "The party goes on <span>· 1 May</span>", "ev-grigliata@C": "The party <span>· 1 May</span>",
     "att-legend": "Your reply", "att-si": "We'll be there", "att-no": "We can't make it",
     "party-l": "Group or family name", "party-h": "E.g. “The Smiths” or “Mark and Julia”",
     "who-h": "Who's in your group", "who-hint": "One card per person, children included.",
@@ -690,18 +625,7 @@ const I18N = {
     "date-hero": "30 avril 2027",
     "fallback": "Pour voir tous les détails, ouvrez le lien qui figure sur votre invitation.",
     "eb-cer": "La cérémonie", "date-cer": "Vendredi 30 avril 2027", "time-cer": "À 15 h 15",
-    "eb-rec": "La réception",
-    "rec-lead": "Ensuite, nous aurons la grande joie de nous retrouver pour fêter ensemble ce jour si spécial au",
-    "time-rec": "À 17 h 30",
-    "time-gr": "À 12 h 30",
-    "eb-gr": "Le lendemain",
-    "gr-lead-a": "Sale et Pepe ont senti une odeur de viande grillée et de spécialités siciliennes,<br>on dirait bien que la fête continue !",
-    "gr-lead-c1": "Sale et Pepe ont senti une odeur de viande grillée et de spécialités siciliennes, et nous entendons déjà la musique !",
-    "gr-lead-c2": "Nous serions ravis de passer cette journée avec vous !",
-    "date-gr": "1er mai 2027",
-    "gr-addr": `Nous vous attendons Via Settipani 53, Balestrate`,
-    "eb-go": "Comment venir", "h-go": "Adresses", "card-gr": "Le barbecue", "card-gr@A": "La fête continue", "card-gr@C": "La fête",
-    "addr-gr": `Via Settipani 53, Balestrate`,
+    "eb-go": "Comment venir", "h-go": "Adresses",
     "park": `<strong>Parking</strong> · ${tbd("fr", "infos à venir")}`,
     "maps": "Ouvrir dans Maps",
     "ztl": "Le centre historique de Palerme comporte des zones à trafic limité (ZTL). Le vendredi 30 avril, la ZTL de jour est active jusqu’à 20 h : si vous venez en voiture, vérifiez les horaires et les permis sur le <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">site de la Ville de Palerme</a>.",
@@ -709,9 +633,6 @@ const I18N = {
     "rsvp-h": "Merci de confirmer votre présence",
     "rsvp-by": `avant le <span class="time">31 janvier 2027</span>`,
     "ev-cerimonia": "Cérémonie <span>· 30 avril</span>",
-    "ev-ricevimento": "Réception <span>· 30 avril</span>",
-    "ev-grigliata": "Barbecue <span>· 1er mai</span>",
-    "ev-grigliata@A": "La fête continue <span>· 1er mai</span>", "ev-grigliata@C": "La fête <span>· 1er mai</span>",
     "att-legend": "Votre réponse", "att-si": "Nous serons là", "att-no": "Nous ne pourrons pas venir",
     "party-l": "Nom du groupe ou de la famille", "party-h": "Ex. « Famille Martin » ou « Marc et Julie »",
     "who-h": "Qui êtes-vous", "who-hint": "Une fiche par personne, enfants compris.",
@@ -745,18 +666,7 @@ const I18N = {
     "date-hero": "30 de abril de 2027",
     "fallback": "Para ver todos los detalles, abrid el enlace que aparece en vuestra invitación.",
     "eb-cer": "La ceremonia", "date-cer": "Viernes 30 de abril de 2027", "time-cer": "A las 15:15",
-    "eb-rec": "La celebración",
-    "rec-lead": "A continuación, será una gran alegría reunirnos para celebrar juntos este día tan especial en el",
-    "time-rec": "A las 17:30",
-    "time-gr": "A las 12:30",
-    "eb-gr": "Al día siguiente",
-    "gr-lead-a": "Sale y Pepe han olido carne a la brasa y comida callejera siciliana,<br>¡parece que la fiesta continúa!",
-    "gr-lead-c1": "Sale y Pepe han olido carne a la brasa y comida callejera siciliana, ¡y nosotros ya oímos la música!",
-    "gr-lead-c2": "¡Nos encantaría pasar este día con vosotros!",
-    "date-gr": "1 de mayo de 2027",
-    "gr-addr": `Os esperamos en Via Settipani 53, Balestrate`,
-    "eb-go": "Cómo llegar", "h-go": "Direcciones", "card-gr": "La barbacoa", "card-gr@A": "La fiesta continúa", "card-gr@C": "La fiesta",
-    "addr-gr": `Via Settipani 53, Balestrate`,
+    "eb-go": "Cómo llegar", "h-go": "Direcciones",
     "park": `<strong>Aparcamiento</strong> · ${tbd("es", "información próximamente")}`,
     "maps": "Abrir en Maps",
     "ztl": "El centro histórico de Palermo tiene zonas de tráfico restringido (ZTL). El viernes 30 de abril la ZTL diurna está activa hasta las 20:00: si venís en coche, consultad horarios y permisos en la <a href=\"https://repository.comune.palermo.it/polizia-municipale-info.php\" target=\"_blank\" rel=\"noopener\">web del Ayuntamiento de Palermo</a>.",
@@ -764,9 +674,6 @@ const I18N = {
     "rsvp-h": "Confirmad vuestra asistencia",
     "rsvp-by": `antes del <span class="time">31 de enero de 2027</span>`,
     "ev-cerimonia": "Ceremonia <span>· 30 de abril</span>",
-    "ev-ricevimento": "Celebración <span>· 30 de abril</span>",
-    "ev-grigliata": "Barbacoa <span>· 1 de mayo</span>",
-    "ev-grigliata@A": "La fiesta continúa <span>· 1 de mayo</span>", "ev-grigliata@C": "La fiesta <span>· 1 de mayo</span>",
     "att-legend": "Vuestra respuesta", "att-si": "Allí estaremos", "att-no": "No podremos ir",
     "party-l": "Nombre del grupo o de la familia", "party-h": "P. ej. «Familia García» o «Marcos y Julia»",
     "who-h": "Quiénes sois", "who-hint": "Una ficha por persona, niños incluidos.",
@@ -839,51 +746,78 @@ document.getElementById("lang").addEventListener("click", e => {
 </script>
 
 <script>
-// Invite codes → views. A = both days, B = 30 Apr only, C = ceremony + 1 May.
-// Codes are deliberately non-obvious so B/C guests can't just guess "A".
-const VIEWS = { k7x2: "A", m3q9: "B", r5w8: "C" };
-const PREVIEW = false; // false at launch: hides the switcher, no default view
+// Each invite link carries a code (?i=CODE). What not every guest should see is encrypted in LOCK:
+// the code opens one of the boxes, and the box holds the keys to the parts of the page meant for that invite.
+// No code or a wrong one → only the general page and the fallback message.
+const LOCK = {"salt": "71Y7IKMFRQh+5psg5LvTTQ==", "iter": 150000, "boxes": ["iCe6OgPkilTbKLfotJxnaAEyXXphoL6mNrvNcxPBPQqf5WdiNdJWETAdz6kuYFR4VoBoOKMyl69RM7WSH4kOUI0qF+dtiLRFlNE9im2IMW0/Sa5g9vsjHk5FdFrJ6HFWJlsfwqhIL5l1GJ5Fq4Y+SpHKL6fsQOzN75zpsi1tWE1YgtbZX/pq461XMRfH20YbSpK5Y1nKOg==", "i01BgTZdXyR1wsrBGoACMYGTO8LUJU/mkXs4H+osTpebtf4Y9h8err+68qkQ6b8mO97UU9B5vvA2KR9Hj5d+z6FxLbZ6z7C8xhsCWmJpMk91N+/rNlu/U+yqrNEaOmtomsE=", "VGLBJOKIS1QRWe+ZeXqViVU5Yag72LKvO8+fQbETnDiqSjAhy8Pzkz53mI16l6bJm3NXeR6+Ez3E6BBmBkvkL03D6xVr86FTX0CWe+bN5UozzCm/5YjZ1l1Be9DVvMDcuuE="], "parts": {"r": "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", "f": "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"}};
+const EVENTS = [{ id: "cerimonia", views: "ABC" }];   // the other events arrive with the parts they belong to
 
-// Live site uses ?i=CODE; the preview frame only passes #CODE, so read both.
+const fromB64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const open_ = async (key, bytes) => new Uint8Array(await crypto.subtle.decrypt({ name: "AES-GCM", iv: bytes.slice(0, 12) }, key, bytes.slice(12)));
+const aes = raw => crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+
+async function unlock(code) {
+  if (!code || !window.crypto?.subtle) return null;
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(code.trim().toLowerCase()), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({ name: "PBKDF2", salt: fromB64(LOCK.salt), iterations: LOCK.iter, hash: "SHA-256" },
+                                            base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+  for (const b of LOCK.boxes) { try { return JSON.parse(new TextDecoder().decode(await open_(key, fromB64(b)))); } catch {} }
+  return null; // wrong code: no box opens
+}
+
+const revealed = new Set();
+async function reveal(part, rawKey) {
+  if (revealed.has(part)) return;
+  revealed.add(part);
+  const key = await aes(fromB64(rawKey));
+  const p = JSON.parse(new TextDecoder().decode(await open_(key, fromB64(LOCK.parts[part]))));
+  for (const l in p.i18n) Object.assign(I18N[l] ??= {}, p.i18n[l]);
+  EVENTS.push(...p.events);
+  EVENTS.sort((a, b) => b.views.length - a.views.length || (a.id > b.id ? -1 : 1)); // widest invite first, as on the printed card
+  document.querySelectorAll(`template[data-enc="${part}"]`).forEach((slot, i) => {
+    const tpl = document.createElement("template");
+    tpl.innerHTML = p.html[i];
+    const el = tpl.content.firstElementChild;
+    slot.replaceWith(el);
+    // drawings live in their own encrypted files; fetch and decrypt them in the background
+    [el, ...el.querySelectorAll("img")].filter(x => x.dataset?.encSrc).forEach(async img => {
+      try {
+        const bytes = new Uint8Array(await (await fetch(img.dataset.encSrc)).arrayBuffer());
+        img.src = URL.createObjectURL(new Blob([await open_(key, bytes)], { type: "image/webp" }));
+      } catch {}
+    });
+  });
+}
+
 function currentCode() {
   const q = new URLSearchParams(location.search).get("i");
   return q || location.hash.slice(1) || null;
 }
 
-function apply(code) {
-  let view = VIEWS[code];
-  if (!view && PREVIEW && !code) view = "A"; // preview opens on the fullest view
+// view = "A" | "B" | "C" | null; while the code is being checked, nothing view-specific shows (no flash of the fallback)
+function apply(view, pending = false) {
   document.body.dataset.view = view || "none";
-
-  // Every element tagged data-show="A B …" is visible only in those views
   document.querySelectorAll("[data-show]").forEach(el => {
     el.hidden = !(view && el.dataset.show.split(" ").includes(view));
   });
-  document.getElementById("fallback").hidden = !!view;
+  document.getElementById("fallback").hidden = !!view || pending;
   translateStatic();                     // some labels differ per view
   if (window.renderRsvp) renderRsvp();   // event checkboxes depend on the view
   if (window.buildThread) buildThread(); // sections changed → re-route the thread
-
-  document.querySelectorAll("#switch button").forEach(b => {
-    const on = view ? VIEWS[b.dataset.code] === view : b.dataset.code === "none";
-    b.setAttribute("aria-pressed", on);
-  });
 }
 
-const sw = document.getElementById("switch");
-if (PREVIEW && sw) {
-  sw.addEventListener("click", e => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    location.hash = b.dataset.code;
-    apply(b.dataset.code);
-    window.scrollTo({ top: 0 });
-  });
-} else {
-  sw?.remove();   // the public build has no switcher at all
+async function start() {
+  const code = currentCode();
+  apply(null, !!code);
+  let box = null;
+  try {
+    box = await unlock(code);
+    if (box) for (const [part, k] of Object.entries(box.k)) await reveal(part, k);
+  } catch { box = null; }
+  apply(box?.v ?? null);
 }
-addEventListener("hashchange", () => apply(currentCode()));
-apply(currentCode());
+addEventListener("hashchange", start);
+start();
 </script>
 
 <script>
@@ -891,11 +825,6 @@ apply(currentCode());
    Every row carries the invite view (A/B/C), so all three links feed the same sheet. */
 (() => {
   const ENDPOINT = "https://script.google.com/macros/s/AKfycbynrveCfJpO0Qh6_hUlvW0hWk0CUmC_J3ZVhDTau8Kv5DDWBQe0DwAY76j8RL6gOHRNmg/exec"; // Apps Script web app (RSVP → Google Sheet)
-  const EVENTS = [
-    { id: "cerimonia",   views: "ABC" },
-    { id: "ricevimento", views: "AB"  },
-    { id: "grigliata",   views: "AC"  },
-  ];
   // Allergens follow the EU list of 14 (Reg. 1169/2011, Annex II) that caterers already label by.
   const DIET = [
     { g: "g-regime",   items: ["vegetariano", "vegano"] },
@@ -907,7 +836,7 @@ apply(currentCode());
   const form = $("#rsvp-form"), list = $("#people"), done = $("#rsvp-done"), btn = $("#submit");
   const view = () => document.body.dataset.view;
   const invited = () => EVENTS.filter(e => e.views.includes(view()));
-  const blank = () => ({ name: "", type: "adulto", age: "", ev: { cerimonia: true, ricevimento: true, grigliata: true }, diet: [], dietOther: "" });
+  const blank = () => ({ name: "", type: "adulto", age: "", ev: {}, diet: [], dietOther: "" });
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const dl = (id, lang = LANG) => I18N[lang].d[id];           // diet label
   const dietSummary = p => p.diet.length ? p.diet.map(id => dl(id)).join(", ") : t("none");
@@ -948,7 +877,7 @@ apply(currentCode());
       <fieldset class="field yes-only">
         <legend>${t("attends")}</legend>
         <div class="checks">${invited().map(e => `
-          <input type="checkbox" id="p${i}-${e.id}" data-ev="${e.id}" ${p.ev[e.id] ? "checked" : ""}>
+          <input type="checkbox" id="p${i}-${e.id}" data-ev="${e.id}" ${p.ev[e.id] !== false ? "checked" : ""}>
           <label for="p${i}-${e.id}">${t("ev-" + e.id)}</label>`).join("")}
         </div>
       </fieldset>
@@ -1030,7 +959,7 @@ apply(currentCode());
       if (p.type === "minore" && (p.age === "" || !Number.isInteger(age) || age < 0 || age > 17)) err($(`#p${i}-age`), "e-age");
       if (S.attending === "si" && p.diet.includes("altro") && !p.dietOther.trim()) err($(`#p${i}-other`), "e-other");
     });
-    const anyone = S.people.some(p => invited().some(e => p.ev[e.id]));
+    const anyone = S.people.some(p => invited().some(e => p.ev[e.id] !== false));
     if (!first && S.attending === "si" && !anyone) {
       const m = $("#form-err"); m.textContent = t("e-none"); m.hidden = false;
       first = list.querySelector(".checks input");
@@ -1040,7 +969,7 @@ apply(currentCode());
   }
 
   // What we send. Values are always Italian so the sheet stays consistent; "lang" records the guest's language.
-  // Events outside the guest's view are null → "—" in the sheet.
+  // Events outside the guest's view are null (or absent) → "—" in the sheet.
   const payload = () => ({
     view: view(),
     lang: LANG,
@@ -1051,7 +980,7 @@ apply(currentCode());
       name: p.name.trim(),
       type: p.type,
       age: p.type === "minore" ? Number(p.age) : null,
-      events: Object.fromEntries(EVENTS.map(e => [e.id, e.views.includes(view()) ? S.attending === "si" && !!p.ev[e.id] : null])),
+      events: Object.fromEntries(EVENTS.map(e => [e.id, e.views.includes(view()) ? S.attending === "si" && p.ev[e.id] !== false : null])),
       // "Glutine (celiachia), Uova, Altro: kiwi"
       diet: S.attending !== "si" ? "" : p.diet.filter(d => d !== "altro").map(d => dl(d, "it"))
         .concat(p.diet.includes("altro") ? [`Altro: ${p.dietOther.trim()}`] : []).join(", "),
@@ -1060,15 +989,6 @@ apply(currentCode());
     sentAt: new Date().toISOString(),
   });
 
-  // Same row layout the Apps Script will write (step 4) — shown here in preview only
-  const HEAD = ["Data", "ID risposta", "Invito", "Lingua", "Gruppo (scritto dagli ospiti)", "Abbinato a (Invitati)", "Risposta", "Nome", "Tipo", "Età", "Cerimonia", "Ricevimento", "Festa 1° maggio", "Allergie / dieta", "Note"];
-  const yn = v => (v === null ? "—" : v ? "Sì" : "No");
-  const rows = pl => pl.people.map(p => [
-    new Date(pl.sentAt).toLocaleString("it-IT"), "(auto)", pl.view, pl.lang.toUpperCase(), pl.partyName, "(auto o a mano)",
-    pl.attending ? "Ci saremo" : "Non ci saremo",
-    p.name, p.type === "minore" ? "< 18 anni" : "Adulto", p.age ?? "",
-    yn(p.events.cerimonia), yn(p.events.ricevimento), yn(p.events.grigliata), p.diet, pl.notes,
-  ]);
 
   form.addEventListener("submit", async e => {
     e.preventDefault();
@@ -1097,24 +1017,9 @@ apply(currentCode());
     done.innerHTML = `
       <p class="script venue">${t("thanks")}</p>
       <p>${t("got", { party: esc(pl.partyName) })}</p>
-      <p class="note">${t(pl.attending ? "done-yes" : "done-no")}</p>
-      ${PREVIEW ? `
-      <div class="sheet-preview">
-        <p class="eyebrow">Anteprima · righe che finiranno nel foglio</p>
-        <div class="sheet-wrap"><table>
-          <thead><tr>${HEAD.map(h => `<th>${h}</th>`).join("")}</tr></thead>
-          <tbody>${rows(pl).map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody>
-        </table></div>
-        <p class="hint">${ENDPOINT ? "" : "Anteprima: nessun dato è stato inviato. Il collegamento al foglio arriva allo step 4."}</p>
-        <button type="button" class="link-btn" id="again">Compila di nuovo</button>
-      </div>` : ""}`;
+      <p class="note">${t(pl.attending ? "done-yes" : "done-no")}</p>`;
     form.hidden = true; done.hidden = false;
     if (scroll) done.scrollIntoView({ behavior: "smooth", block: "center" });
-    $("#again")?.addEventListener("click", () => {
-      S = { attending: "si", party: "", notes: "", people: [blank()] };
-      last = null; form.reset(); done.hidden = true; form.hidden = false;
-      render(); btn.disabled = false; btn.textContent = t("submit");
-    });
   }
 
   // close an open dropdown when tapping elsewhere
@@ -1129,7 +1034,7 @@ apply(currentCode());
 
 <script>
 /* The thread: one SVG path running down the page side. It ties a loop at section breaks, runs into the
-   church drawing's ground line (the drawing carries it across), passes just below the library drawing,
+   church drawing's ground line (the drawing carries it across), passes just below the other drawings,
    and ends by winding a ball of yarn between the cats. It "draws" as far as the reader has scrolled. */
 (() => {
   const NS = "http://www.w3.org/2000/svg";
