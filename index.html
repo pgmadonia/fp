@@ -1283,7 +1283,8 @@ apply(currentCode());
     // prefer the page's own scrolling when it does scroll; otherwise the markers (all in page-body px)
     const scrolls = H > innerHeight + 40;
     const top = scrolls ? scrollY - off : vis ? vis.top : 0, bot = scrolls ? top + innerHeight : vis ? vis.bot : innerHeight;
-    if (bot >= H - off - 4) return LEN;                             // at the very bottom: finish
+    // at the very bottom, or the whole page fits on screen (short page, nothing to scroll): finish
+    if (bot >= Math.min(H - off, document.body.offsetHeight) - 4) return LEN;
     const t = top + (bot - top) * 0.72;
     let lo = 0, hi = ys.length - 1;
     if (t >= ys[hi]) return LEN;
