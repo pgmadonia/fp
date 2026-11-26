@@ -616,7 +616,7 @@ const I18N = {
     "person": "Persona", "remove": "Rimuovi", "name-l": "Nome e cognome",
     "adult": "Adulto", "minor": "&lt; 18 anni", "age-l": "Età", "attends": "Partecipa a",
     "diet-l": `Allergie o esigenze alimentari <span class="opt">facoltativo</span>`, "none": "Nessuna",
-    "g-regime": "Regime alimentare", "g-intol": "Intolleranze e celiachia", "g-allergie": "Allergie", "g-altro": "Non in elenco",
+    "g-regime": "Regime alimentare", "g-intol": "Intolleranze e celiachia", "g-allergie": "Allergie e intolleranze", "g-altro": "Non in elenco",
     "dd-done": "Fatto", "other-l": "Quale altra allergia o esigenza?",
     "e-party": "Scrivete un nome per il gruppo, così sappiamo chi siete.",
     "e-name": "Scrivete nome e cognome.", "e-age": "Età da 0 a 17.",
@@ -671,7 +671,7 @@ const I18N = {
     "person": "Person", "remove": "Remove", "name-l": "Full name",
     "adult": "Adult", "minor": "&lt; 18 years", "age-l": "Age", "attends": "Attending",
     "diet-l": `Allergies or dietary needs <span class="opt">optional</span>`, "none": "None",
-    "g-regime": "Diet", "g-intol": "Intolerances and coeliac disease", "g-allergie": "Allergies", "g-altro": "Not listed",
+    "g-regime": "Diet", "g-intol": "Intolerances and coeliac disease", "g-allergie": "Allergies and intolerances", "g-altro": "Not listed",
     "dd-done": "Done", "other-l": "Which other allergy or need?",
     "e-party": "Please enter a name for your group, so we know who you are.",
     "e-name": "Please enter first and last name.", "e-age": "Age from 0 to 17.",
@@ -726,7 +726,7 @@ const I18N = {
     "person": "Personne", "remove": "Retirer", "name-l": "Prénom et nom",
     "adult": "Adulte", "minor": "&lt; 18 ans", "age-l": "Âge", "attends": "Participe à",
     "diet-l": `Allergies ou régime alimentaire <span class="opt">facultatif</span>`, "none": "Aucune",
-    "g-regime": "Régime alimentaire", "g-intol": "Intolérances et maladie cœliaque", "g-allergie": "Allergies", "g-altro": "Absent de la liste",
+    "g-regime": "Régime alimentaire", "g-intol": "Intolérances et maladie cœliaque", "g-allergie": "Allergies et intolérances", "g-altro": "Absent de la liste",
     "dd-done": "OK", "other-l": "Quelle autre allergie ou contrainte ?",
     "e-party": "Indiquez un nom pour votre groupe, pour que nous sachions qui vous êtes.",
     "e-name": "Indiquez le prénom et le nom.", "e-age": "Âge de 0 à 17 ans.",
@@ -781,7 +781,7 @@ const I18N = {
     "person": "Persona", "remove": "Quitar", "name-l": "Nombre y apellidos",
     "adult": "Adulto", "minor": "&lt; 18 años", "age-l": "Edad", "attends": "Asiste a",
     "diet-l": `Alergias o necesidades alimentarias <span class="opt">opcional</span>`, "none": "Ninguna",
-    "g-regime": "Dieta", "g-intol": "Intolerancias y celiaquía", "g-allergie": "Alergias", "g-altro": "No está en la lista",
+    "g-regime": "Dieta", "g-intol": "Intolerancias y celiaquía", "g-allergie": "Alergias e intolerancias", "g-altro": "No está en la lista",
     "dd-done": "Listo", "other-l": "¿Qué otra alergia o necesidad?",
     "e-party": "Escribid un nombre para el grupo, así sabremos quiénes sois.",
     "e-name": "Escribid nombre y apellidos.", "e-age": "Edad de 0 a 17.",
@@ -899,8 +899,7 @@ apply(currentCode());
   // Allergens follow the EU list of 14 (Reg. 1169/2011, Annex II) that caterers already label by.
   const DIET = [
     { g: "g-regime",   items: ["vegetariano", "vegano"] },
-    { g: "g-intol",    items: ["glutine", "lattosio"] },
-    { g: "g-allergie", items: ["latte", "uova", "frutta_guscio", "arachidi", "pesce", "crostacei", "molluschi",
+    { g: "g-allergie", items: ["glutine", "lattosio", "latte", "uova", "frutta_guscio", "arachidi", "pesce", "crostacei", "molluschi",
                                "soia", "sesamo", "sedano", "senape", "solfiti", "lupini"] },
   ];
   const MAX = 12, KEY = "rsvp-draft";
