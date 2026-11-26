@@ -510,7 +510,7 @@ main, footer { position: relative; z-index: 1; }
 
   <!-- REGALI — every view -->
   <section id="regali" data-show="A B C">
-    <svg class="curl" viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
+    <svg class="curl" viewBox="0 0 72 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 20c10 0 16-2 22-8 5-5 3-10-1-10s-6 6-1 11c6 6 16 9 40 7"/></svg>
     <div class="gift-text" data-i18n="gift-text"><p>Quest’ultimo anno è stato fatto di valigie, voli attraverso l’oceano, saluti e giorni contati prima di riabbracciarci.</p><p>Ora comincia il viaggio che abbiamo desiderato più di tutti: una vita quotidiana, semplice, insieme.</p><p>Una vita che speriamo di continuare a condividere anche con voi, tra incontri, racconti e nuove occasioni per ritrovarci, ovunque saremo.</p><p>Il nostro regalo più bello il giorno del nostro matrimonio sarà poter condividere con voi questo inizio. Tuttavia per chi desidera accompagnarci anche con un supporto per le prossime avventure insieme, di seguito i nostri recapiti.</p></div>
     <dl class="gift-card" data-show="A B">
       <dt data-i18n="gift-holder">Intestato a</dt>
@@ -518,7 +518,6 @@ main, footer { position: relative; z-index: 1; }
       <dt>IBAN</dt>
       <dd class="iban-row">
         <span id="iban" data-i18n="gift-iban-v"><span class="tbd">IBAN da definire</span></span>
-        <button type="button" class="link-btn" id="copy-iban" data-i18n="copy" hidden>Copia IBAN</button>
       </dd>
     </dl>
   </section>
@@ -705,7 +704,7 @@ const I18N = {
 };
 
 // Bank details for the gifts section: fill these in and the placeholders disappear in every language.
-const GIFT = { holder: "Flavia Palazzolo e Paolo Gennaro Madonia", iban: "IT24 B036 6901 6008 1788 6478 367" };   // e.g. iban: "IT60 X054 2811 1010 0000 0123 456"
+const GIFT = { holder: "Flavia Palazzolo e Paolo Gennaro Madonia", iban: "IT24B0366901600817886478367" };   // e.g. iban: "IT60 X054 2811 1010 0000 0123 456"
 
 // Language: saved choice → browser language → Italian
 let LANG = "it";
